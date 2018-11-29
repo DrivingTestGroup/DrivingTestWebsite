@@ -17,7 +17,7 @@ function includeHTML() {
           elmnt.removeAttribute("include-file");
           includeHTML();
         }
-      }      
+      }
       xhttp.open("GET", file, true);
       xhttp.send();
       /*exit the function:*/
