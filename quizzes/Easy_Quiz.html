@@ -89,15 +89,15 @@ document.getElementById("menu").innerHTML =
 function end(){
   document.getElementById("number").innerHTML = "";
     if (counter == 20){
-      document.getElementById("que").innerHTML = "Perfect! <br> You got "+ counter +"/20!";
+      document.getElementById("que").innerHTML = "Perfect! <br> You got "+ counter +"/10!";
     }else if (counter > 15){
-      document.getElementById("que").innerHTML = "Awesome! <br> You got "+ counter +"/20!";
+      document.getElementById("que").innerHTML = "Awesome! <br> You got "+ counter +"/10!";
     }else if (counter > 10){
-      document.getElementById("que").innerHTML = "Practice Makes Perfect! You got "+ counter +"/20!";
+      document.getElementById("que").innerHTML = "Practice Makes Perfect! You got "+ counter +"/10!";
     }else if (counter > 5){
-      document.getElementById("que").innerHTML = "Good Try!  <br> You got "+counter +"/20!";
+      document.getElementById("que").innerHTML = "Good Try!  <br> You got "+counter +"/10!";
    }else{
-      document.getElementById("que").innerHTML = "More practice may be needed. <br> You got "+ counter +"/20!";
+      document.getElementById("que").innerHTML = "More practice may be needed. <br> You got "+ counter +"/10!";
    }
 document.getElementById("que").innerHTML +=
 '<br><button onclick= "retry()">Retry!</button>'
