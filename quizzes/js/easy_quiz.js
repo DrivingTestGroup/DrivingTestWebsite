@@ -3,32 +3,37 @@ var q=[
         "When a traffic light is yelow, you should:",
         "To drive in ontario, you must be at least _____ years old and have a valid ontario drivers license.",
         "When may you lend your driver's licence?",
-        "The use of alcohol or drugs affect the driver by impairing:"
+        "The use of alcohol or drugs affect the driver by impairing:",
+        "If you come up on several snow plows clearing a freeway, you should NOT:"
         ];
 var a=[
         'Slow down in anticipation of the light turning red.\n',
         '19',
         "In emergencies.",
-        "Judgement"
+        "Judgement",
+        "Try and pass between them.\n"
         ];
 var alen= a.length;
 var b=[
         'Speed up to get past before the light turns red.',
         '18',
         'To a person learning to drive.',
-        'Vision'
+        'Vision',
+        "Keep a safe distance."
         ];
 var c=[
         'Keep the same speed becasue the light will turn green soon.',
         '21',
         'It is not permitted.\n',
-        'Reaction time'
+        'Reaction time',
+        "Wait for the plows to allow traffic to pass safely."
       ];
 var d=[
         'Stop quickly and suddenly.',
         '16\n',
         'For identification purposes.',
-        'All of the above\n'
+        'All of the above\n',
+        "Any of the above."
       ];
 
 function question() {
