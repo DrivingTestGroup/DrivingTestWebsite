@@ -27,7 +27,7 @@ var c=[
 var d=[
         'Stop quickly and suddenly.',
         '16\n',
-        'For identification purposes.'
+        'For identification purposes.',
         'All of the above\n'
       ];
 
