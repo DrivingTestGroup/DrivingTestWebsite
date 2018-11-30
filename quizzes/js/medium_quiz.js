@@ -3,8 +3,8 @@ var q=[
         "Never change lanes in traffic without:",
         "What must a driver do before entering a highway from a private road or driveway?",
         "When you are deciding whether or not to make a U-turn, your first consideration should be to check:",
-        "When approaching an intersection where a traffic signal light is red and a police officer motions you to go through, you should:"
-        "To get your vehicle out of a skid, you should first:",
+        "When approaching an intersection where a traffic signal light is red and a police officer motions you to go through, you should:",
+        "To get your vehicle out of a skid, you should first:"
         ];
 var a=[
         'Looking in the rear view mirror only', 
@@ -18,8 +18,8 @@ var b=[
         'Giving proper signal and looking to make sure the move can be made safely.\n', 
         'Enter or cross the highway as quickly as possible.',
         'Height of curb.',
-        'Obey the officers signal and go throught at once.\n'
-        'Steer straight ahead', 
+        'Obey the officers signal and go throught at once.\n',
+        'Steer straight ahead'
         ];
 var c=[
         'Blowing your horn and looking to the rear.', 
