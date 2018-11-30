@@ -1,25 +1,30 @@
 
 var ans, i, len, x, z, y, counter=0, j= -1, n, num=0;
 var q=[
-        "To get your vehicle out of a skid, you should first:",
-        "The world is round?"
+        "How soon after a licensed driver changes his/her name or address is he/she required to notify the Ministry of Transportation and Communications?"
+        "If you are convicted of careless driving, you will get six demerit points and can get:",
+        "When changing lanes on a multi-lane highway, a driver should:"
         ];
 var a=[
-        'Steer straight ahead', 
-        'hi'
+        "Within 15 days.",
+        'Your license suspened for up to two years.',
+        'Activate emergency signals.'
         ];
 var alen= a.length;
 var b=[
-        'Steer in the opposite direction of the skid', 
-        'greetings'
+        'Within 6 days.\n', 
+        'A fine up to 2 years',
+        'Honk at other drivers.'
         ];
 var c=[
-        'Steer in the direction you want to go\n', 
-        'bye'
+        'Within 30 days.', 
+        'A jail sentence up to six months.'.
+        'Check mirors and signals before moving left or right.\n'
         ];
 var d=[
-        'Apply brakes hard', 
-        'hello\n'
+        'Any time prior to the renewal of the license.'
+        'All of the above.\n',
+        'Not concern themselves with the other drivers.'
         ];
 function question() {
 j++;
