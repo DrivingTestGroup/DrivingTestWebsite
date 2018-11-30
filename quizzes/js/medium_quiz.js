@@ -7,7 +7,7 @@ var q=[
         "To get your vehicle out of a skid, you should first:"
         ];
 var a=[
-        'Looking in the rear view mirror only', 
+        'Looking in the rear view mirror only.', 
         'Yield right-of-way to all vehicles approaching on the highway.\n',
         'Turning radius of your car.',
         'Wiat for the light to turn green.',
