@@ -1,7 +1,7 @@
 var ans, i, len, x, z, y, counter=0, j= -1, n, num=0;
 var q=[
         "When a traffic light is yelow, you should:",
-        "To drive in ontario, you must be at least _____ years old and have a valid ontario drivers licinse."
+        "To drive in ontario, you must be at least _____ years old and have a valid ontario drivers license."
         ];
 var a=[
         'Slow down in anticipation of the light turning red.\n',
@@ -18,7 +18,7 @@ var c=[
       ];
 var d=[
         'Stop quickly and suddenly.',
-        '16'
+        '16\n'
         ];
 
 function question() {
@@ -64,16 +64,16 @@ document.getElementById("menu").innerHTML =
 }
 function end(){
   document.getElementById("number").innerHTML = "";
-    if (counter == 20){
-      document.getElementById("que").innerHTML = "Perfect! <br> You got "+ counter +"/20!";
-    }else if (counter > 15){
-      document.getElementById("que").innerHTML = "Awesome! <br> You got "+ counter +"/20!";
-    }else if (counter > 10){
-      document.getElementById("que").innerHTML = "Practice Makes Perfect! You got "+ counter +"/20!";
+    if (counter == 10){
+      document.getElementById("que").innerHTML = "Perfect! <br> You got "+ counter +"/10!";
+    }else if (counter > 7){
+      document.getElementById("que").innerHTML = "Awesome! <br> You got "+ counter +"/10!";
     }else if (counter > 5){
-      document.getElementById("que").innerHTML = "Good Try!  <br> You got "+counter +"/20!";
+      document.getElementById("que").innerHTML = "Practice Makes Perfect! You got "+ counter +"/10!";
+    }else if (counter > 3){
+      document.getElementById("que").innerHTML = "Good Try!  <br> You got "+counter +"/10!";
    }else{
-      document.getElementById("que").innerHTML = "More practice may be needed. <br> You got "+ counter +"/20!";
+      document.getElementById("que").innerHTML = "More practice may be needed. <br> You got "+ counter +"/10!";
    }
 document.getElementById("que").innerHTML +=
 '<br><button onclick= "retry()">Retry!</button>'
