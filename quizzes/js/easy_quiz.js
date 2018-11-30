@@ -2,29 +2,34 @@ var ans, i, len, x, z, y, counter=0, j= -1, n, num=0;
 var q=[
         "When a traffic light is yelow, you should:",
         "To drive in ontario, you must be at least _____ years old and have a valid ontario drivers license.",
-        "When may you lend your driver's licence?"
+        "When may you lend your driver's licence?",
+        "The use of alcohol or drugs affect the driver by impairing:"
         ];
 var a=[
         'Slow down in anticipation of the light turning red.\n',
         '19',
-        "In emergencies."
+        "In emergencies.",
+        "Judgement"
         ];
 var alen= a.length;
 var b=[
         'Speed up to get past before the light turns red.',
         '18',
-        'To a person learning to drive.'
+        'To a person learning to drive.',
+        'Vision'
         ];
 var c=[
         'Keep the same speed becasue the light will turn green soon.',
         '21',
-        'It is not permitted.\n'
+        'It is not permitted.\n',
+        'Reaction time'
       ];
 var d=[
         'Stop quickly and suddenly.',
         '16\n',
         'For identification purposes.'
-        ];
+        'All of the above\n'
+      ];
 
 function question() {
 j++;
