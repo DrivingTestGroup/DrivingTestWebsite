@@ -22,7 +22,7 @@ var c=[
       ];
 var d=[
         'Stop quickly and suddenly.',
-        '16\n",
+        '16\n',
         'For identification purposes.'
         ];
 
