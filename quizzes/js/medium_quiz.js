@@ -1,24 +1,29 @@
 var ans, i, len, x, z, y, counter=0, j= -1, n, num=0;
 var q=[
         "Never change lanes in traffic without:",
-        "The world is round?"
+        "What must a driver do before entering a highway from a private road or driveway?",
+        "When you are deciding whether or not to make a U-turn, your first consideration should be to check:"
         ];
 var a=[
         'Looking in the rear view mirror only', 
-        'hi'
+        'Yield right-of-way to all vehicles approaching on the highway.\n',
+        'Turning radius of your car.'
         ];
 var alen= a.length;
 var b=[
-        'Giving proper signal and looking to make sure the move can be made safely\n', 
-        'greetings'
+        'Giving proper signal and looking to make sure the move can be made safely.\n', 
+        'Enter or cross the highway as quickly as possible.',
+        'Height of curb.'
         ];
 var c=[
-        'Blowing your horn and looking to the rear', 
-        'bye'
+        'Blowing your horn and looking to the rear.', 
+        'Sound horn and proceed with caution.',
+        'Presence of trees, fire hydrants or poles near the curb.'
         ];
 var d=[
-        'Decreasing speed and giving correct signal', 
-        'hello\n'
+        'Decreasing speed and giving correct signal.', 
+        'Give hand signal then take right-of-way.',
+        'Traffic regulations.\n'
         ];
 function question() {
 j++;
