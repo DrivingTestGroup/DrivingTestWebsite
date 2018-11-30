@@ -46,7 +46,7 @@ for (y = 0; y < 4; y++){
   }
 }
   if (x == "") {
-   document.getElementById("correct").innerHTML = "PLease pick an answer";
+   document.getElementById("correct").innerHTML = "Please pick an answer";
   }else if (x == n) {
     counter++;
    document.getElementById("correct").innerHTML = "Correct!";
@@ -68,7 +68,7 @@ document.getElementById("number").innerHTML = "";
     }else if (counter > 7){
       document.getElementById("que").innerHTML = "Awesome! <br> You got "+ counter +"/10!";
     }else if (counter > 5){
-      document.getElementById("que").innerHTML = "Practice Makes Perfect! You got "+ counter +"/20!";
+      document.getElementById("que").innerHTML = "Practice Makes Perfect! You got "+ counter +"/10!";
     }else if (counter > 3){
       document.getElementById("que").innerHTML = "Good Try!  <br> You got "+counter +"/10!";
    }else{
