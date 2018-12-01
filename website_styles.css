@@ -22,7 +22,7 @@
 
 /* navigation bar*/
 .navbar{
-  overflow: hidden; 
+  overflow: hidden;
   background-color: #80ccff;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
@@ -47,7 +47,7 @@
 
 /*dropdown button*/
 .dropdown .dropdown-button {
-    font-size: 16px;    
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -106,6 +106,120 @@
     color:white;
 }
 
+
+
+
+
+/*picture*/
+.home_image {
+    background-image: url("pictures/night_city.jpg");
+    min-height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*homepage header*/
+.cnt_head_home_img{
+  color:white;
+  background-color:#66e0ff;
+  opacity: 0.9;
+  padding: 20px 30px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius:20px;
+}
+
+/*header for the home image*/
+.header {
+  font-size: 35pt;
+  text-shadow:2px 5px 5px black;
+}
+
+
+
+
+/*description of the site*/
+.description {
+  padding: 40px 80px;
+  background-color:#F5F5F5;
+  padding-bottom: 40px;
+}
+
+.description h2 {
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align:center;
+  padding-bottom: 10px;
+}
+
+.description p {
+  opacity: 0.6;
+  text-align: justify;
+}
+
+
+
+
+/*second parralax image description*/
+.mv_img2 {
+  background-image: url("pictures/country_road.png");
+  background-repeat: norepeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+
+}
+
+.mv_img2 div {
+  background-color: white;
+  opacity: 0.8;
+  padding: 20px 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  position: relative;
+  max-width: 50%;
+  box-shadow: 0px 10px 8px 5px black;
+}
+
+.mv_img2 div h2 {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.mv_img2 div p {
+  text-align: center;
+}
+
+
+
+
+
+/*footer*/
+.footer {
+  background-color: black;
+  padding: 60px 40px;
+}
+
+.footer_items p {
+  color: white;
+  font-size: 12px;
+}
+
+
+
+
+
+
+/*when the screen width is less than 700px*/
 @media screen and (max-width: 700px) {
   .navbar a, .dropdown {
     width:100%;
@@ -115,13 +229,13 @@
     min-width:100%;
   }
 
-}
+  /*heading image position*/
+  .cnt_head_home_img{
+    top: 75%;
+  }
 
-
-/*homepage picture*/
-.night-city-image {
-  width:100%;
-  height:auto;
-  max-height:700px;
-  overflow:hidden;
+  /*header*/
+  .header {
+    font-size: 15pt;
+  }
 }
