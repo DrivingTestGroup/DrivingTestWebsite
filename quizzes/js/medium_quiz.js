@@ -6,6 +6,7 @@ var q=[
         "When approaching an intersection where a traffic signal light is red and a police officer motions you to go through, you should:",
         "To get your vehicle out of a skid, you should first:",
         "Under what circumstances may a driver's licence be cancelled?"
+        "When approaching a sign that reads 'merging traffic,' you must:"
         ];
 var a=[
         'Looking in the rear view mirror only.', 
@@ -13,7 +14,8 @@ var a=[
         'Turning radius of your car.',
         'Wiat for the light to turn green.',
         'Apply brakes hard.',
-        "For failure to attend driver re-examination."
+        "For failure to attend driver re-examination.",
+        "Adjust your speed and position to avoid collision with other vehicles.\n"
         ];
 var alen= a.length;
 var b=[
@@ -22,7 +24,8 @@ var b=[
         'Height of curb.',
         'Obey the officers signal and go throught at once.\n',
         'Steer straight ahead.',
-        "For possesion of altered driver's licence."
+        "For possesion of altered driver's licence.".
+        "Honk your horn berfore proceeding."
         ];
 var c=[
         'Blowing your horn and looking to the rear.', 
@@ -30,7 +33,8 @@ var c=[
         'Presence of trees, fire hydrants or poles near the curb.',
         'Stop to make sure s/he want you to go through',
         'Steer in the direction you want to go.\n',
-        "For failure to properly complete a driver re-examination."
+        "For failure to properly complete a driver re-examination.",
+        "Let the cars behind you go first."
         ];
 var d=[
         'Decreasing speed and giving correct signal.', 
@@ -38,7 +42,8 @@ var d=[
         'Traffic regulations.\n',
         "Call the officer's attention to the red light",
         'Steer in the opposite direction of the skid.'
-        "Any of the above.\n"
+        "Any of the above.\n".
+        "Stop before proceeding."
         ];
 function question() {
 j++;
