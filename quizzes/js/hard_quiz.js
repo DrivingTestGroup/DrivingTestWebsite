@@ -6,7 +6,8 @@ var q=[
         "When changing lanes on a multi-lane highway, a driver should:",
         "When lights are required, drivers must use low-beam headlights:",
         "When 15 or more demerit points have accumulated on a record, the driver's licence is suspended:",
-        "When passing a cyclist, leave at least ____ distance between your vehicle and the cyclist."
+        "When passing a cyclist, leave at least ____ distance between your vehicle and the cyclist.",
+        "If you are involved in an accident in which someone is injured, you must:"
         ];
 var a=[
         "Within 15 days.",
@@ -14,7 +15,8 @@ var a=[
         'Activate emergency signals.',
         "Within 150m of an oncoming vehicle.\n",
         "For 3 months.",
-        "1 metre.\n"
+        "1 metre.\n",
+        "Report the accident to the Ministry of Transportation and Communication only."
         ];
 var alen= a.length;
 var b=[
@@ -23,7 +25,8 @@ var b=[
         'Honk at other drivers.',
         "Within 300m of an oncoming vehicle.",
         "At the discretion of the Ministry.",
-        "0.5 metre."
+        "0.5 metres.",
+        "Report the accident at once to the nearest municipal or provincial police officer."
         ];
 var c=[
         'Within 30 days.', 
@@ -31,7 +34,8 @@ var c=[
         'Check mirors and signals before moving left or right.\n',
         "At their discretion. This is a safety practice, not a law.",
         "Automatically, and for 30 days, from recipt of the licence by the MTO.\n",
-        "1 foot."
+        "1 foot.",
+        "Report the accident within 48 hours to the nearest municipal or provincial police officer."
         ];
 var d=[
         'Any time prior to the renewal of the license.',
@@ -39,7 +43,8 @@ var d=[
         'Not concern themselves with the other drivers.',
         "Within 1km of an oncoming vehicle.",
         "Only if the licence is NOT used for business purposes.",
-        "There is no minimum distance."
+        "There is no minimum distance.",
+        "Report the accident to your insurance company only."
         ];
 function question() {
 j++;
