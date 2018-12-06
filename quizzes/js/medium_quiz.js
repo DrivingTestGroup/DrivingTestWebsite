@@ -5,7 +5,7 @@ var q=[
         "When you are deciding whether or not to make a U-turn, your first consideration should be to check:",
         "When approaching an intersection where a traffic signal light is red and a police officer motions you to go through, you should:",
         "To get your vehicle out of a skid, you should first:",
-        "Under what circumstances may a driver's licence be cancelled?"
+        "Under what circumstances may a driver's licence be cancelled?",
         "When approaching a sign that reads 'merging traffic,' you must:"
         ];
 var a=[
@@ -24,7 +24,7 @@ var b=[
         'Height of curb.',
         'Obey the officers signal and go throught at once.\n',
         'Steer straight ahead.',
-        "For possesion of altered driver's licence.".
+        "For possesion of altered driver's licence.",
         "Honk your horn berfore proceeding."
         ];
 var c=[
@@ -41,8 +41,8 @@ var d=[
         'Give hand signal then take right-of-way.',
         'Traffic regulations.\n',
         "Call the officer's attention to the red light",
-        'Steer in the opposite direction of the skid.'
-        "Any of the above.\n".
+        'Steer in the opposite direction of the skid.',
+        "Any of the above.\n",
         "Stop before proceeding."
         ];
 function question() {
