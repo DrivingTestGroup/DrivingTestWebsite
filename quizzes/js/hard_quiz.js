@@ -5,14 +5,16 @@ var q=[
         "If you are convicted of careless driving, you will get six demerit points and can get:",
         "When changing lanes on a multi-lane highway, a driver should:",
         "When lights are required, drivers must use low-beam headlights:",
-        "When 15 or more demerit points have accumulated on a record, the driver's licence is suspended:"
+        "When 15 or more demerit points have accumulated on a record, the driver's licence is suspended:",
+        "When passing a cyclist, leave at least ____ distance between your vehicle and the cyclist."
         ];
 var a=[
         "Within 15 days.",
         'Your license suspened for up to two years.',
         'Activate emergency signals.',
         "Within 150m of an oncoming vehicle.\n",
-        "For 3 months."
+        "For 3 months.",
+        "1 metre.\n"
         ];
 var alen= a.length;
 var b=[
@@ -20,21 +22,24 @@ var b=[
         'A fine up to 2 years',
         'Honk at other drivers.',
         "Within 300m of an oncoming vehicle.",
-        "At the discretion of the Ministry."
+        "At the discretion of the Ministry.",
+        "0.5 metre."
         ];
 var c=[
         'Within 30 days.', 
         'A jail sentence up to six months.',
         'Check mirors and signals before moving left or right.\n',
         "At their discretion. This is a safety practice, not a law.",
-        "Automatically, and for 30 days, from recipt of the licence by the MTO.\n"
+        "Automatically, and for 30 days, from recipt of the licence by the MTO.\n",
+        "1 foot."
         ];
 var d=[
         'Any time prior to the renewal of the license.',
         'All of the above.\n',
         'Not concern themselves with the other drivers.',
         "Within 1km of an oncoming vehicle.",
-        "Only if the licence is NOT used for business purposes."
+        "Only if the licence is NOT used for business purposes.",
+        "There is no minimum distance."
         ];
 function question() {
 j++;
