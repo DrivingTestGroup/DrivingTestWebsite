@@ -7,7 +7,8 @@ var q=[
         "To get your vehicle out of a skid, you should first:",
         "Under what circumstances may a driver's licence be cancelled?",
         "When approaching a sign that reads 'merging traffic,' you must:",
-        "When the driver of another vehicle is about to overtake and pass your vehicle, you must:"
+        "When the driver of another vehicle is about to overtake and pass your vehicle, you must:",
+        "When you are in a roundabout:"
         ];
 var a=[
         'Looking in the rear view mirror only.', 
@@ -17,7 +18,8 @@ var a=[
         'Apply brakes hard.',
         "For failure to attend driver re-examination.",
         "Adjust your speed and position to avoid collision with other vehicles.\n",
-        "Speed up so that passing is not necessary."
+        "Speed up so that passing is not necessary.",
+        "You may stop for any reason."
         ];
 var alen= a.length;
 var b=[
@@ -28,7 +30,8 @@ var b=[
         'Steer straight ahead.',
         "For possesion of altered driver's licence.",
         "Honk your horn berfore proceeding.",
-        "Move to the left to prevent passing."
+        "Move to the left to prevent passing.",
+        "Keep to the right of the center island and drive in a counter-clockwise direction until you reach your exit.\n"
         ];
 var c=[
         'Blowing your horn and looking to the rear.', 
@@ -38,7 +41,8 @@ var c=[
         'Steer in the direction you want to go.\n',
         "For failure to properly complete a driver re-examination.",
         "Let the cars behind you go first.",
-        "Signal to the other driver not to pass."
+        "Signal to the other driver not to pass.",
+        "You may pass large vehicles and change lanes."
         ];
 var d=[
         'Decreasing speed and giving correct signal.', 
@@ -49,6 +53,7 @@ var d=[
         "Any of the above.\n",
         "Stop before proceeding.",
         "Move to the right and allow such vehicle to pass.\n"
+        "Do not do ANY of the above!\n"
         ];
 function question() {
 j++;
