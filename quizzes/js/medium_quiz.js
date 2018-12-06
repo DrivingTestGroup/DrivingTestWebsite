@@ -4,14 +4,16 @@ var q=[
         "What must a driver do before entering a highway from a private road or driveway?",
         "When you are deciding whether or not to make a U-turn, your first consideration should be to check:",
         "When approaching an intersection where a traffic signal light is red and a police officer motions you to go through, you should:",
-        "To get your vehicle out of a skid, you should first:"
+        "To get your vehicle out of a skid, you should first:",
+        "Under what circumstances may a driver's licence be cancelled?"
         ];
 var a=[
         'Looking in the rear view mirror only.', 
         'Yield right-of-way to all vehicles approaching on the highway.\n',
         'Turning radius of your car.',
         'Wiat for the light to turn green.',
-        'Apply brakes hard.'
+        'Apply brakes hard.',
+        "For failure to attend driver re-examination."
         ];
 var alen= a.length;
 var b=[
@@ -19,14 +21,16 @@ var b=[
         'Enter or cross the highway as quickly as possible.',
         'Height of curb.',
         'Obey the officers signal and go throught at once.\n',
-        'Steer straight ahead.'
+        'Steer straight ahead.',
+        "For possesion of altered driver's licence."
         ];
 var c=[
         'Blowing your horn and looking to the rear.', 
         'Sound horn and proceed with caution.',
         'Presence of trees, fire hydrants or poles near the curb.',
         'Stop to make sure s/he want you to go through',
-        'Steer in the direction you want to go.\n'
+        'Steer in the direction you want to go.\n',
+        "For failure to properly complete a driver re-examination."
         ];
 var d=[
         'Decreasing speed and giving correct signal.', 
@@ -34,6 +38,7 @@ var d=[
         'Traffic regulations.\n',
         "Call the officer's attention to the red light",
         'Steer in the opposite direction of the skid.'
+        "Any of the above.\n"
         ];
 function question() {
 j++;
