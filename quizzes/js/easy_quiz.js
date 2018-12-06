@@ -4,14 +4,16 @@ var q=[
         "To drive in ontario, you must be at least _____ years old and have a valid ontario drivers license.",
         "When may you lend your driver's licence?",
         "The use of alcohol or drugs affect the driver by impairing:",
-        "If you come up on several snow plows clearing a freeway, you should NOT:"
+        "If you come up on several snow plows clearing a freeway, you should NOT:",
+        "If you receive a call while driving and you do not have a passenger who can take the call, you should:"
         ];
 var a=[
         'Slow down in anticipation of the light turning red.\n',
         '19',
         "In emergencies.",
         "Judgement",
-        "Try and pass between them.\n"
+        "Try and pass between them.\n",
+        "Any of the below.\n"
         ];
 var alen= a.length;
 var b=[
@@ -19,21 +21,24 @@ var b=[
         '18',
         'To a person learning to drive.',
         'Vision',
-        "Keep a safe distance."
+        "Keep a safe distance.",
+        "Use the hands free system."
         ];
 var c=[
         'Keep the same speed becasue the light will turn green soon.',
         '21',
         'It is not permitted.\n',
         'Reaction time',
-        "Wait for the plows to allow traffic to pass safely."
+        "Wait for the plows to allow traffic to pass safely.",
+        "Let the call go to voice mail"
       ];
 var d=[
         'Stop quickly and suddenly.',
         '16\n',
         'For identification purposes.',
         'All of the above\n',
-        "Any of the above."
+        "Any of the above.",
+        "Pull the vehicle over and use your cell phone."
       ];
 
 function question() {
