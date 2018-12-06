@@ -5,7 +5,8 @@ var q=[
         "When may you lend your driver's licence?",
         "The use of alcohol or drugs affect the driver by impairing:",
         "If you come up on several snow plows clearing a freeway, you should NOT:",
-        "If you receive a call while driving and you do not have a passenger who can take the call, you should:"
+        "If you receive a call while driving and you do not have a passenger who can take the call, you should:",
+        "Upon approaching a yield sign, what does the law require you to do?"
         ];
 var a=[
         'Slow down in anticipation of the light turning red.\n',
@@ -13,7 +14,8 @@ var a=[
         "In emergencies.",
         "Judgement",
         "Try and pass between them.\n",
-        "Any of the below.\n"
+        "Any of the below.\n",
+        "Stop, then enter traffic quickly."
         ];
 var alen= a.length;
 var b=[
@@ -22,7 +24,8 @@ var b=[
         'To a person learning to drive.',
         'Vision',
         "Keep a safe distance.",
-        "Use the hands free system."
+        "Use the hands free system.",
+        "Stop, then enter traffic slowly."
         ];
 var c=[
         'Keep the same speed becasue the light will turn green soon.',
@@ -30,7 +33,8 @@ var c=[
         'It is not permitted.\n',
         'Reaction time',
         "Wait for the plows to allow traffic to pass safely.",
-        "Let the call go to voice mail"
+        "Let the call go to voice mail.",
+        "Slow down, stop if necessary, and yield the right of way.\n"
       ];
 var d=[
         'Stop quickly and suddenly.',
@@ -38,7 +42,8 @@ var d=[
         'For identification purposes.',
         'All of the above\n',
         "Any of the above.",
-        "Pull the vehicle over and use your cell phone."
+        "Pull the vehicle over and use your cell phone.",
+        "Speed up and force your way into traffic."
       ];
 
 function question() {
