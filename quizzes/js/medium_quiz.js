@@ -6,16 +6,18 @@ var q=[
         "When approaching an intersection where a traffic signal light is red and a police officer motions you to go through, you should:",
         "To get your vehicle out of a skid, you should first:",
         "Under what circumstances may a driver's licence be cancelled?",
-        "When approaching a sign that reads 'merging traffic,' you must:"
+        "When approaching a sign that reads 'merging traffic,' you must:",
+        "When the driver of another vehicle is about to overtake and pass your vehicle, you must:"
         ];
 var a=[
         'Looking in the rear view mirror only.', 
         'Yield right-of-way to all vehicles approaching on the highway.\n',
         'Turning radius of your car.',
-        'Wiat for the light to turn green.',
+        'Wait for the light to turn green.',
         'Apply brakes hard.',
         "For failure to attend driver re-examination.",
-        "Adjust your speed and position to avoid collision with other vehicles.\n"
+        "Adjust your speed and position to avoid collision with other vehicles.\n",
+        "Speed up so that passing is not necessary."
         ];
 var alen= a.length;
 var b=[
@@ -25,7 +27,8 @@ var b=[
         'Obey the officers signal and go throught at once.\n',
         'Steer straight ahead.',
         "For possesion of altered driver's licence.",
-        "Honk your horn berfore proceeding."
+        "Honk your horn berfore proceeding.",
+        "Move to the left to prevent passing."
         ];
 var c=[
         'Blowing your horn and looking to the rear.', 
@@ -34,7 +37,8 @@ var c=[
         'Stop to make sure s/he want you to go through',
         'Steer in the direction you want to go.\n',
         "For failure to properly complete a driver re-examination.",
-        "Let the cars behind you go first."
+        "Let the cars behind you go first.",
+        "Signal to the other driver not to pass."
         ];
 var d=[
         'Decreasing speed and giving correct signal.', 
@@ -43,7 +47,8 @@ var d=[
         "Call the officer's attention to the red light",
         'Steer in the opposite direction of the skid.',
         "Any of the above.\n",
-        "Stop before proceeding."
+        "Stop before proceeding.",
+        "Move to the right and allow such vehicle to pass.\n"
         ];
 function question() {
 j++;
