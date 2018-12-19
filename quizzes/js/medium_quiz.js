@@ -121,5 +121,6 @@ document.getElementById("que").innerHTML +=
 function retry(){
 j=-1;
 counter=0;
+num=0;
 question();
 }
