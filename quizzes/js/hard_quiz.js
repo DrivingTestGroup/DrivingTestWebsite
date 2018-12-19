@@ -7,7 +7,9 @@ var q=[
         "When lights are required, drivers must use low-beam headlights:",
         "When 15 or more demerit points have accumulated on a record, the driver's licence is suspended:",
         "When passing a cyclist, leave at least ____ distance between your vehicle and the cyclist.",
-        "If you are involved in an accident in which someone is injured, you must:"
+        "If you are involved in an accident in which someone is injured, you must:",
+        "Hydroplaning occurs during heavy rain when a vehicle's tires ride up above the water on the roadway. To help prevent hydroplaning, you should NOT:",
+        "In a vehicle with manual transmission, when descending a steep hill, a good safe-driving practice is to:"
         ];
 var a=[
         "Within 15 days.",
@@ -16,7 +18,9 @@ var a=[
         "Within 150m of an oncoming vehicle.\n",
         "For 3 months.",
         "1 metre.\n",
-        "Report the accident to the Ministry of Transportation and Communication only."
+        "Report the accident to the Ministry of Transportation and Communication only.",
+        "Ensure the tires are inflated to the proper tire preasure.",
+        "Place gear shift in neutral."
         ];
 var alen= a.length;
 var b=[
@@ -26,7 +30,9 @@ var b=[
         "Within 300m of an oncoming vehicle.",
         "At the discretion of the Ministry.",
         "0.5 metres.",
-        "Report the accident at once to the nearest municipal or provincial police officer."
+        "Report the accident at once to the nearest municipal or provincial police officer.",
+        "Drive in outer lanes where water tends to accumulate.\n",
+        "Gear down and allow engine to assist in breaking.\n"
         ];
 var c=[
         'Within 30 days.', 
@@ -35,7 +41,9 @@ var c=[
         "At their discretion. This is a safety practice, not a law.",
         "Automatically, and for 30 days, from recipt of the licence by the MTO.\n",
         "1 foot.",
-        "Report the accident within 48 hours to the nearest municipal or provincial police officer."
+        "Report the accident within 48 hours to the nearest municipal or provincial police officer.",
+        "Reduce driving speed when driving in the rain.",
+        "Turn of ignition."
         ];
 var d=[
         'Any time prior to the renewal of the license.',
@@ -44,7 +52,9 @@ var d=[
         "Within 1km of an oncoming vehicle.",
         "Only if the licence is NOT used for business purposes.",
         "There is no minimum distance.",
-        "Report the accident to your insurance company only."
+        "Report the accident to your insurance company only.",
+        "Ensure the tires on your vehicle have a good tread depth.",
+        "Disengage clutch and coast."
         ];
 function question() {
 j++;
