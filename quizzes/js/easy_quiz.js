@@ -6,7 +6,10 @@ var q=[
         "The use of alcohol or drugs affect the driver by impairing:",
         "If you come up on several snow plows clearing a freeway, you should NOT:",
         "If you receive a call while driving and you do not have a passenger who can take the call, you should:",
-        "Upon approaching a yield sign, what does the law require you to do?"
+        "Upon approaching a yield sign, what does the law require you to do?",
+        "When the traffic signal light facing you is red and you intend to go straight through the intersection, what must you do?",
+        "If someone is tailgating you, what should you do?",
+        "Which of the following classes of vehicles may carry a red light visible from the front?"
         ];
 var a=[
         'Slow down in anticipation of the light turning red.\n',
@@ -15,7 +18,10 @@ var a=[
         "Judgement",
         "Try and pass between them.\n",
         "Any of the below.\n",
-        "Stop, then enter traffic quickly."
+        "Stop, then enter traffic quickly.",
+        "Slow down, then procced when the way is clear.",
+        "Pull over to let the tailgater pass.",
+        "Emergency vehicles responding to a call.\n"
         ];
 var alen= a.length;
 var b=[
@@ -26,6 +32,9 @@ var b=[
         "Keep a safe distance.",
         "Use the hands free system.",
         "Stop, then enter traffic slowly."
+        "Stop, then proceed only when the light turns green and the way is clear.\n",
+        "Slow down slightly, to increase the space in front of your car.",
+        "Pleasure-type motor vehicles."
         ];
 var c=[
         'Keep the same speed becasue the light will turn green soon.',
@@ -34,7 +43,10 @@ var c=[
         'Reaction time',
         "Wait for the plows to allow traffic to pass safely.",
         "Let the call go to voice mail.",
-        "Slow down, stop if necessary, and yield the right of way.\n"
+        "Slow down, stop if necessary, and yield the right of way.\n",
+        "Stop, then proceed when the way is clear.",
+        "Move into another lane when it seems safe to do so.",
+        "Bicycles."
       ];
 var d=[
         'Stop quickly and suddenly.',
@@ -43,7 +55,10 @@ var d=[
         'All of the above\n',
         "Any of the above.",
         "Pull the vehicle over and use your cell phone.",
-        "Speed up and force your way into traffic."
+        "Speed up and force your way into traffic.",
+        "Stop, give predestrians right of way, the procceed with caution.",
+        "Any of the above.\n",
+        "Commercial motor vehicles."
       ];
 
 function question() {
