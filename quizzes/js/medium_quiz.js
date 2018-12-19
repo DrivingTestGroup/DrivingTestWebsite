@@ -8,7 +8,8 @@ var q=[
         "Under what circumstances may a driver's licence be cancelled?",
         "When approaching a sign that reads 'merging traffic,' you must:",
         "When the driver of another vehicle is about to overtake and pass your vehicle, you must:",
-        "When you are in a roundabout:"
+        "When you are in a roundabout:",
+        "Which of the following has the right-of-way over all others at an intersection when the signal light is green?"
         ];
 var a=[
         'Looking in the rear view mirror only.', 
@@ -19,7 +20,8 @@ var a=[
         "For failure to attend driver re-examination.",
         "Adjust your speed and position to avoid collision with other vehicles.\n",
         "Speed up so that passing is not necessary.",
-        "You may stop for any reason."
+        "You may stop for any reason.",
+        "Vehicles turning right."
         ];
 var alen= a.length;
 var b=[
@@ -31,7 +33,8 @@ var b=[
         "For possesion of altered driver's licence.",
         "Honk your horn berfore proceeding.",
         "Move to the left to prevent passing.",
-        "Keep to the right of the center island and drive in a counter-clockwise direction until you reach your exit.\n"
+        "Keep to the right of the center island and drive in a counter-clockwise direction until you reach your exit.\n",
+        "Pedestrians crossing against the light."
         ];
 var c=[
         'Blowing your horn and looking to the rear.', 
@@ -42,7 +45,8 @@ var c=[
         "For failure to properly complete a driver re-examination.",
         "Let the cars behind you go first.",
         "Signal to the other driver not to pass.",
-        "You may pass large vehicles and change lanes."
+        "You may pass large vehicles and change lanes.",
+        "Pedsetrians crossing with the light.\n"
         ];
 var d=[
         'Decreasing speed and giving correct signal.', 
@@ -53,7 +57,8 @@ var d=[
         "Any of the above.\n",
         "Stop before proceeding.",
         "Move to the right and allow such vehicle to pass.\n"
-        "Do not do ANY of the above!\n"
+        "Do not do any of the above!\n",
+        "Vehicles turing left."
         ];
 function question() {
 j++;
