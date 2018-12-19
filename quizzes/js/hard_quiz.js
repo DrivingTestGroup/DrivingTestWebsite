@@ -9,7 +9,8 @@ var q=[
         "When passing a cyclist, leave at least ____ distance between your vehicle and the cyclist.",
         "If you are involved in an accident in which someone is injured, you must:",
         "Hydroplaning occurs during heavy rain when a vehicle's tires ride up above the water on the roadway. To help prevent hydroplaning, you should NOT:",
-        "In a vehicle with manual transmission, when descending a steep hill, a good safe-driving practice is to:"
+        "In a vehicle with manual transmission, when descending a steep hill, a good safe-driving practice is to:",
+        "Before leaving your car parked on the right side of the street facing a downgrade, you should:"
         ];
 var a=[
         "Within 15 days.",
@@ -20,7 +21,8 @@ var a=[
         "1 metre.\n",
         "Report the accident to the Ministry of Transportation and Communication only.",
         "Ensure the tires are inflated to the proper tire preasure.",
-        "Place gear shift in neutral."
+        "Place gear shift in neutral.",
+        "Turn your front wheels to the left and set your parking break."
         ];
 var alen= a.length;
 var b=[
@@ -32,7 +34,8 @@ var b=[
         "0.5 metres.",
         "Report the accident at once to the nearest municipal or provincial police officer.",
         "Drive in outer lanes where water tends to accumulate.\n",
-        "Gear down and allow engine to assist in breaking.\n"
+        "Gear down and allow engine to assist in breaking.\n",
+        "Leave your front wheels parallel to the curb."
         ];
 var c=[
         'Within 30 days.', 
@@ -43,7 +46,8 @@ var c=[
         "1 foot.",
         "Report the accident within 48 hours to the nearest municipal or provincial police officer.",
         "Reduce driving speed when driving in the rain.",
-        "Turn of ignition."
+        "Turn of ignition.",
+        "Set your parking breaks only."
         ];
 var d=[
         'Any time prior to the renewal of the license.',
@@ -54,7 +58,8 @@ var d=[
         "There is no minimum distance.",
         "Report the accident to your insurance company only.",
         "Ensure the tires on your vehicle have a good tread depth.",
-        "Disengage clutch and coast."
+        "Disengage clutch and coast.",
+        "Turn your front wheels right and set your break.\n"
         ];
 function question() {
 j++;
