@@ -122,8 +122,8 @@
 
 /*homepage header*/
 .cnt_head_home_img{
-  color:white;
-  background-color:#66e0ff;
+  color:black;
+  background-color:#F5F5F5;
   opacity: 0.9;
   padding: 20px 30px;
   position:absolute;
@@ -135,11 +135,14 @@
 
 /*header for the home image*/
 .header {
-  font-size: 35pt;
+  font-size: 40pt;
   text-shadow:2px 5px 5px black;
 }
 
-
+.header1 {
+  font-size: 30pt;
+  text-shadow:2px 5px 5px black;
+}
 
 
 /*description of the site*/
