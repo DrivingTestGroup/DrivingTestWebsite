@@ -56,7 +56,7 @@ var d=[
         'Steer in the opposite direction of the skid.',
         "Any of the above.\n",
         "Stop before proceeding.",
-        "Move to the right and allow such vehicle to pass.\n"
+        "Move to the right and allow such vehicle to pass.\n",
         "Do not do any of the above!\n",
         "Vehicles turing left."
         ];
