@@ -139,10 +139,10 @@
 
 /*description of the site*/
 .description {
+    color: black;
   padding: 60px 100px;
   background-color:#F5F5F5;
   padding-bottom: 40px;
-  color: black;
 }
 
 .description h2 {
