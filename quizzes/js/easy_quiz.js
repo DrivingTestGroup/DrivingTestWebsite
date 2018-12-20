@@ -31,7 +31,7 @@ var b=[
         'Vision',
         "Keep a safe distance.",
         "Use the hands free system.",
-        "Stop, then enter traffic slowly."
+        "Stop, then enter traffic slowly.",
         "Stop, then proceed only when the light turns green and the way is clear.\n",
         "Slow down slightly, to increase the space in front of your car.",
         "Pleasure-type motor vehicles."
@@ -123,5 +123,6 @@ document.getElementById("que").innerHTML +=
 function retry(){
 j=-1;
 counter=0;
+num=0;
 question();
 }
