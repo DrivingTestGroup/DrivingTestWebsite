@@ -79,7 +79,7 @@
 /*content for the dropdown*/
 .dropdown-content {
     display: none;
-    position: absolute;
+
     background-color:#F5F5F5;
     min-width:35%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
