@@ -39,7 +39,7 @@
           <i class="fa fa-caret-down"></i>
         </div>
         <div class="dropdown-content">
-          <a  href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/quizzes/easy_quiz.php">Easy </a>
+          <a  href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/quizzes/Easy_Quiz.php">Easy </a>
 
           <a  href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/quizzes/Medium_Quiz.php">Medium </a>
 
