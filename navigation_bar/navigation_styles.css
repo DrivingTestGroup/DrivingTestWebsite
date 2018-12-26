@@ -1,4 +1,4 @@
-*, body {
+* {
   margin:0;
   padding:0;
   font-family: Verdana,sans-serif;
@@ -11,7 +11,6 @@
   background-color:#F5F5F5;
   padding:20px 10px 5px 10px;
   height:40pt;
-  overflow:hidden;
 }
 
 /*words for the title*/
@@ -31,16 +30,27 @@
   display:none;
   margin:0;
   padding:0;
-  background-color:#80ccff;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+  overflow-x:visible;
   z-index:2;
 }
 
+.xs_background {
+  background-color: #80ccff;
+  padding:35px 0px;
+  z-index:2;
+}
+
+
 /*menu_icon for extra small menu bar*/
 .menu_icon {
-  padding:20px 0px;
+  float:left;
+  padding:20.5px 0px;
   width: 5em;
+  /*overflow-y:hidden;*/
+  z-index:2;
+  background-color:#80ccff;
 }
 
 /*lines for the menu icon*/
@@ -83,6 +93,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     margin-top:20px;
+    overflow-x:visible;
 }
 
 
@@ -96,6 +107,7 @@
     display: block;
     min-width:100%;
     margin:0;
+    z-index:2;
 }
 
 /*menu button with a dropdown*/
@@ -114,6 +126,7 @@
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    z-index:2;
 }
 
 /*dropdown content*/
@@ -148,19 +161,13 @@
 
 /* navigation bar*/
 .navbar{
-  margin:0;
-  padding:0;
-  background-color: #80ccff;
-  font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
-  position:sticky;
-  top:0px;
   z-index:2;
+  overflow-x:visible;
 }
 
 
 /*menu buttons without dropdown list*/
-.navbar .menu-link {
+.menu-link {
    float: left;
     font-size: 16px;
     color: white;
@@ -168,8 +175,8 @@
     width:20%;
     padding:20px 0px;
     text-decoration: none;
-    position: relative;
     background-color: #80ccff;
+    position:relative;
 }
 
 
@@ -177,7 +184,7 @@
 .dropdown {
   width:20%;
   text-align:center;
-  background-color: #80ccff;
+  z-index:2;
 }
 
 /*dropdown button*/
@@ -187,20 +194,19 @@
     outline: none;
     color: white;
     padding: 20px 0px;
-    background-color: inherit;
-    font-family: inherit;
+    background-color: #80ccff;
     margin: 0;
+    position:relative;
 }
 
 /*division including the dropdown and the dropdown button*/
 .dropdown{
   float:left;
-  overflow:hidden;
 }
 
 
 /*hovering over menu buttons*/
-.navbar a:hover, .dropdown:hover .dropdown-button, .xs_menu_link:hover, .xs_dropdown:hover .xs_dropdown_button {
+.menu-link:hover, .dropdown:hover .dropdown-button, .xs_menu_link:hover, .xs_dropdown:hover .xs_dropdown_button {
   background-color: #193366;
   color:white;
   -webkit-transition: background-color 0.5s;
@@ -258,7 +264,7 @@
 .sticky {
     position:fixed;
     top:0;
-    width: 100%;
+    width:100%;
 }
 
 
@@ -281,6 +287,7 @@
   transition: opacity 0.5s, transform 1s;
   transform-origin: center;
 }
+
 
 
 
