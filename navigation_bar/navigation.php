@@ -11,8 +11,8 @@
     <h2 class="title-heading">G1 Driving Test</h2>
   </div>
   
-  
-  <div class="xs-menu" id="stickyNavbar">
+
+  <div class="xs-menu" id="stickyXsNavbar">
     <div class="menu_icon">
       <div class="hamburger_line">
       </div>
@@ -53,7 +53,7 @@
         </div>
         
                 <div class="xs_dropdown_content">
-          <a  href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/quizzes/easy_quiz.php">Easy </a>
+          <a  href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/quizzes/Easy_Quiz.php">Easy </a>
 
           <a  href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/quizzes/Medium_Quiz.php">Medium </a>
 
@@ -84,18 +84,18 @@
     </div>
     </div>
     
+    <div class="xs_background">
+    </div>
+    
     
 
   </div>
   
  
-  
-
   <div class="navbar" id="stickyNavbar">
-    <div class="menu-button">
     <a class="menu-link" href="index.html"> HOME 
       <div class="underline">
-    </div></a>
+    </div> </a>
       
 
 
@@ -126,7 +126,7 @@
           <i class="fa fa-caret-down"></i>
         </div>
         <div class="dropdown-content">
-          <a  href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/quizzes/easy_quiz.php">Easy </a>
+          <a  href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/quizzes/Easy_Quiz.php">Easy </a>
 
           <a  href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/quizzes/Medium_Quiz.php">Medium </a>
 
@@ -156,10 +156,11 @@
       <div class="underline">
       </div> </a>
   </div>
-  </div>
+
     
     
-    <script type="text/javascript" src="https://wwwg1drivingtestwebsitetk.000webhostapp.com/navigation_bar/js/sticky_funciton.js"></script>
+    <script type="text/javascript" src="https://wwwg1drivingtestwebsitetk.000webhostapp.com/navigation_bar/js/sticky_funciton.js"></script
+
     
  </body>
 </html>
