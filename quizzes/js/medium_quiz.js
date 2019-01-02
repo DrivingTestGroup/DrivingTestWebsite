@@ -64,7 +64,10 @@ function question() {
 j++;
 num++;
 document.getElementById("number").innerHTML = num + "/10 Questions";
-document.getElementById("que").innerHTML ='<p>'+ q[j] +'</p><br><form><input type="radio" name="choice" value="'+ a[j] +'">'+ a[j] +'<br><input type="radio" name="choice" value="'+ b[j] +'">'+ b[j] +'<br><input type="radio" name="choice" value="'+ c[j] +'">'+ c[j] +'<br><input type="radio" name="choice" value="'+ d[j] +'">'+ d[j] +'<br></form><button onclick="answer('+ j +')">Submit Answer</button><div id="correct"></div><div id="menu"></div>';
+document.getElementById("que").innerHTML ='<p class="quiz_question">'+ q[j] +'</p><br><form><label class="radio_container">' + a[j] + '<input type="radio" name="choice" value="'+ a[j] +'"><span class="checkmark"></span></label><br><label class="radio_container">' + b[j] + '<input type="radio" name="choice" value="' + b[j] +'">'+'<span class="checkmark"></span></label><br><label class="radio_container">'+ c[j] + '<input type="radio" name="choice" value="'+ c[j] +'">'+'<span class="checkmark"></span></label><br><label class="radio_container">'+ d[j] + '<input type="radio" name="choice" value="'+ d[j] +'">'+ '<span class="checkmark"></span></label><br></form><button id="submitAnswer" onclick="answer('+ j +')">Submit Answer</button><div id="correct"></div><div id="menu"></div>';
+
+//shows the counter
+document.getElementById("number").classList.add("counter_show");
 }
 function answer(h) {
   x ="";
@@ -84,22 +87,38 @@ for (y = 0; y < 4; y++){
     break;
   }
 }
+
+//checks it is the last question
+if ((h+1) > (alen-1)){
+  validate();
+  document.getElementById("menu").innerHTML =
+'<button onclick="end()">End of Quiz!</button>'
+}else{
+  validate();
+  if (document.getElementById("correct").innerHTML == "Correct!" ||  document.getElementById("correct").innerHTML == "Incorrect! <br> The correct answer was: "+ n) {
+    document.getElementById("menu").innerHTML = '<button class="next_question"onclick="question()">Next Question!</button>';
+  }
+}
+}
+
+
+//checks if the answer is right or wrong
+function validate() {
   if (x == "") {
    document.getElementById("correct").innerHTML = "Please pick an answer";
   }else if (x == n) {
     counter++;
-   document.getElementById("correct").innerHTML = "Correct!";
+    document.getElementById("correct").innerHTML = "Correct!";
+    document.getElementById("correct").classList.add("right");
+    document.getElementById("submitAnswer").style.display = "none";
   } else {
    document.getElementById("correct").innerHTML = "Incorrect! <br> The correct answer was: "+ n;
+   document.getElementById("correct").classList.add("wrong");
+   document.getElementById("submitAnswer").style.display = "none";
   }
-if ((h+1) > (alen-1)){
-document.getElementById("menu").innerHTML =
-'<button onclick="end()">End of Quiz!</button>'
-}else{
-  document.getElementById("menu").innerHTML =
-'<button onclick="question()">Next Question!</button>'
 }
-}
+
+
 function end(){
 document.getElementById("number").innerHTML = "";
     if (counter == 10){
