@@ -1,80 +1,81 @@
 var ans, i, len, x, z, y, counter=0, j= -1, n, num=0;
 var q=[
-        "When a traffic light is yelow, you should:",
-        "To drive in ontario, you must be at least _____ years old and have a valid ontario drivers license.",
-        "When may you lend your driver's licence?",
-        "The use of alcohol or drugs affect the driver by impairing:",
-        "If you come up on several snow plows clearing a freeway, you should NOT:",
-        "If you receive a call while driving and you do not have a passenger who can take the call, you should:",
-        "Upon approaching a yield sign, what does the law require you to do?",
-        "When the traffic signal light facing you is red and you intend to go straight through the intersection, what must you do?",
-        "If someone is tailgating you, what should you do?",
-        "Which of the following classes of vehicles may carry a red light visible from the front?"
+        "Never change lanes in traffic without:",
+        "What must a driver do before entering a highway from a private road or driveway?",
+        "When you are deciding whether or not to make a U-turn, your first consideration should be to check:",
+        "When approaching an intersection where a traffic signal light is red and a police officer motions you to go through, you should:",
+        "To get your vehicle out of a skid, you should first:",
+        "Under what circumstances may a driver's licence be cancelled?",
+        "When approaching a sign that reads 'merging traffic,' you must:",
+        "When the driver of another vehicle is about to overtake and pass your vehicle, you must:",
+        "When you are in a roundabout:",
+        "Which of the following has the right-of-way over all others at an intersection when the signal light is green?"
         ];
 var a=[
-        'Slow down in anticipation of the light turning red.\n',
-        '19',
-        "In emergencies.",
-        "Judgement",
-        "Try and pass between them.\n",
-        "Any of the below.\n",
-        "Stop, then enter traffic quickly.",
-        "Slow down, then procced when the way is clear.",
-        "Pull over to let the tailgater pass.",
-        "Emergency vehicles responding to a call.\n"
+        'Looking in the rear view mirror only.', 
+        'Yield right-of-way to all vehicles approaching on the highway.\n',
+        'Turning radius of your car.',
+        'Wait for the light to turn green.',
+        'Apply brakes hard.',
+        "For failure to attend driver re-examination.",
+        "Adjust your speed and position to avoid collision with other vehicles.\n",
+        "Speed up so that passing is not necessary.",
+        "You may stop for any reason.",
+        "Vehicles turning right."
         ];
 var alen= a.length;
 var b=[
-        'Speed up to get past before the light turns red.',
-        '18',
-        'To a person learning to drive.',
-        'Vision',
-        "Keep a safe distance.",
-        "Use the hands free system.",
-        "Stop, then enter traffic slowly.",
-        "Stop, then proceed only when the light turns green and the way is clear.\n",
-        "Slow down slightly, to increase the space in front of your car.",
-        "Pleasure-type motor vehicles."
+        'Giving proper signal and looking to make sure the move can be made safely.\n', 
+        'Enter or cross the highway as quickly as possible.',
+        'Height of curb.',
+        'Obey the officers signal and go throught at once.\n',
+        'Steer straight ahead.',
+        "For possesion of altered driver's licence.",
+        "Honk your horn berfore proceeding.",
+        "Move to the left to prevent passing.",
+        "Keep to the right of the center island and drive in a counter-clockwise direction until you reach your exit.\n",
+        "Pedestrians crossing against the light."
         ];
 var c=[
-        'Keep the same speed becasue the light will turn green soon.',
-        '21',
-        'It is not permitted.\n',
-        'Reaction time',
-        "Wait for the plows to allow traffic to pass safely.",
-        "Let the call go to voice mail.",
-        "Slow down, stop if necessary, and yield the right of way.\n",
-        "Stop, then proceed when the way is clear.",
-        "Move into another lane when it seems safe to do so.",
-        "Bicycles."
-      ];
+        'Blowing your horn and looking to the rear.', 
+        'Sound horn and proceed with caution.',
+        'Presence of trees, fire hydrants or poles near the curb.',
+        'Stop to make sure s/he want you to go through',
+        'Steer in the direction you want to go.\n',
+        "For failure to properly complete a driver re-examination.",
+        "Let the cars behind you go first.",
+        "Signal to the other driver not to pass.",
+        "You may pass large vehicles and change lanes.",
+        "Pedsetrians crossing with the light.\n"
+        ];
 var d=[
-        'Stop quickly and suddenly.',
-        '16\n',
-        'For identification purposes.',
-        'All of the above\n',
-        "Any of the above.",
-        "Pull the vehicle over and use your cell phone.",
-        "Speed up and force your way into traffic.",
-        "Stop, give predestrians right of way, the procceed with caution.",
+        'Decreasing speed and giving correct signal.', 
+        'Give hand signal then take right-of-way.',
+        'Traffic regulations.\n',
+        "Call the officer's attention to the red light",
+        'Steer in the opposite direction of the skid.',
         "Any of the above.\n",
-        "Commercial motor vehicles."
-      ];
-
+        "Stop before proceeding.",
+        "Move to the right and allow such vehicle to pass.\n",
+        "Do not do any of the above!\n",
+        "Vehicles turing left."
+        ];
 function question() {
 j++;
 num++;
 document.getElementById("number").innerHTML = num + "/10 Questions";
-document.getElementById("que").innerHTML ='<p>'+ q[j] +'</p><br><form><input type="radio" name="choice" value="'+ a[j] +'">'+ a[j] +'<br><input type="radio" name="choice" value="'+ b[j] +'">'+ b[j] +'<br><input type="radio" name="choice" value="'+ c[j] +'">'+ c[j] +'<br><input type="radio" name="choice" value="'+ d[j] +'">'+ d[j] +'<br></form><button onclick="answer('+ j +')">Submit Answer</button><div id="correct"></div><div id="menu"></div>';
+document.getElementById("que").innerHTML ='<p class="quiz_question">'+ q[j] +'</p><br><form><label class="radio_container">' + a[j] + '<input type="radio" name="choice" value="'+ a[j] +'"><span class="checkmark"></span></label><br><label class="radio_container">' + b[j] + '<input type="radio" name="choice" value="' + b[j] +'">'+'<span class="checkmark"></span></label><br><label class="radio_container">'+ c[j] + '<input type="radio" name="choice" value="'+ c[j] +'">'+'<span class="checkmark"></span></label><br><label class="radio_container">'+ d[j] + '<input type="radio" name="choice" value="'+ d[j] +'">'+ '<span class="checkmark"></span></label><br></form><button id="submitAnswer" onclick="answer('+ j +')">Submit Answer</button><div id="correct"></div><div id="menu"></div>';
+  
+//shows the counter
+document.getElementById("number").classList.add("counter_show");
 }
-
 function answer(h) {
   x ="";
   ans = document.getElementsByName('choice');
   len = ans.length;
   for (i = 0; i < len; i++) {
       if (ans[i].checked) {
-         x = ans[i].value;
+         x = ans[i].value; 
          break;
        }
   }
@@ -86,39 +87,58 @@ for (y = 0; y < 4; y++){
     break;
   }
 }
+
+//checks it is the last question
+if ((h+1) > (alen-1)){
+  validate();
+  document.getElementById("menu").innerHTML =
+'<button onclick="end()">End of Quiz!</button>'
+}else{
+  validate();
+  if (document.getElementById("correct").innerHTML == "Correct!" ||  document.getElementById("correct").innerHTML == "Incorrect! <br> The correct answer was: "+ n) {
+    document.getElementById("menu").innerHTML = '<button class="next_question"onclick="question()">Next Question!</button>';
+  }
+}
+}
+
+
+//checks if the answer is right or wrong
+function validate() {
   if (x == "") {
    document.getElementById("correct").innerHTML = "Please pick an answer";
   }else if (x == n) {
     counter++;
-   document.getElementById("correct").innerHTML = "Correct!";
+    document.getElementById("correct").innerHTML = "Correct!";
+    document.getElementById("correct").classList.add("right");
+    document.getElementById("submitAnswer").style.display = "none";
   } else {
    document.getElementById("correct").innerHTML = "Incorrect! <br> The correct answer was: "+ n;
+   document.getElementById("correct").classList.add("wrong");
+   document.getElementById("submitAnswer").style.display = "none";
   }
-if ((h+1) > (alen-1)){
-document.getElementById("menu").innerHTML =
-'<button onclick="end()">End of Quiz!</button>'
-}else{
-  document.getElementById("menu").innerHTML =
-'<button onclick="question()">Next Question!</button>'
 }
-}
+
+
 function end(){
-  document.getElementById("number").innerHTML = "";
+//remov the counter
+document.getElementById("number").classList.remove("counter_show");
+  
+document.getElementById("number").innerHTML = "";
     if (counter == 10){
-      document.getElementById("que").innerHTML = "Perfect! <br> You got "+ counter +"/10!";
+      document.getElementById("que").innerHTML = "<p class='result'>Perfect!</p> <br> You got "+ counter +"/10!";
     }else if (counter > 7){
-      document.getElementById("que").innerHTML = "Awesome! <br> You got "+ counter +"/10!";
+      document.getElementById("que").innerHTML = "<p class='result'>Awesome!</p> <br> You got "+ counter +"/10!";
     }else if (counter > 5){
-      document.getElementById("que").innerHTML = "Practice Makes Perfect! You got "+ counter +"/10!";
+      document.getElementById("que").innerHTML = "<p class='result'>Practice Makes Perfect!</p><br> You got "+ counter +"/10!";
     }else if (counter > 3){
-      document.getElementById("que").innerHTML = "Good Try!  <br> You got "+counter +"/10!";
+      document.getElementById("que").innerHTML = "<p class='result'>Good Try! </p><br> You got "+counter +"/10!";
    }else{
-      document.getElementById("que").innerHTML = "More practice may be needed. <br> You got "+ counter +"/10!";
+      document.getElementById("que").innerHTML = "<p class='result'>More practice may be needed.</p> <br> You got "+ counter +"/10!";
    }
 document.getElementById("que").innerHTML +=
 '<br><button onclick= "retry()">Retry!</button>'
 document.getElementById("que").innerHTML +=
-'<br><a href="Medium_Quiz.html">Try the Medium Quiz!</a>'
+'<br><a href="Hard_Quiz.html">Try the Hard Quiz!</a>'
 }
 function retry(){
 j=-1;
