@@ -159,7 +159,7 @@
 
     
     
-    <script type="text/javascript" src="https://wwwg1drivingtestwebsitetk.000webhostapp.com/navigation_bar/js/sticky_funciton.js"></script
+    <script type="text/javascript" src="https://wwwg1drivingtestwebsitetk.000webhostapp.com/navigation_bar/js/sticky_funciton.js"></script>
 
     
  </body>
