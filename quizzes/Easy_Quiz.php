@@ -11,15 +11,18 @@ include '../navigation_bar/navigation.php';
     <script type="text/javascript" src="js/easy_quiz.js"></script>
   </head>
   <body>
-    <p id="number" style="float: right;"></p>
-    <div class="container-fluid" id="que">
-    <h>Easy Quiz!</h>
-    <br>
-    <button onclick='question()'>Start</button>
+  <div class="background">  
+    <div class="quiz_container">
+      <p class="counter" id="number"></p>
+      <div class="quiz" id="que">
+        <h>Easy Quiz!</h>
+        <br>
+        <button class="start_end"onclick='question()'>Start</button>
 
-<div id="correct"></div>
-<div id="menu"></div>
-
-</div>
+      <div id="correct"></div>
+      <div id="menu"></div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
