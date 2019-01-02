@@ -1,1 +1,199 @@
+*, body {
+  margin:0;
+  padding:0;
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+
+/*heading*/
+h {
+  font-size:30px;
+  font-weight:bold;
+  color:navy;
+}
+
+
+/*background*/
+.background {
+  background-image: url(../pictures/quizzes/driving_road1.png );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+  top:70px;
+  z-index: 1;
+  position:relative;
+}
+
+
+/*division containing the quiz*/
+.quiz_container {
+  opacity:0.8;
+  background-color:#F5F5F5;
+  padding:20px 40px;
+  width:75%;
+  top:50%;
+  left:50%;
+  /*transform:translate(0,20px);*/
+  z-index:1;
+  position:absolute;
+}
+
+
+/*questions for the quiz*/
+.quiz_question {
+  font-size: 20px;
+  color:navy;
+}
+
+
+/*counter for the questions*/
+.counter {
+  display:none;
+  padding:20px 10px; 
+  background-color: navy;
+  border-radius:20px;
+  color:white;
+  float:right;
+}
+
+/*shows the counter during the questions*/
+.counter_show {
+  display:block;
+}
+
+
+
+/*result*/
+.result {
+  font-size:17px;
+  font-weight:bold;
+  color:navy;
+}
+
+/*correct or incorrect answer*/
+#correct {
+  padding: 25px 10px;
+  font-weight:bold;
+}
+
+/*correct answer*/
+.right {
+  color:#00ff00;
+}
+
+/*wrong answer*/
+.wrong {
+  color:red;
+}
+
+/*buttons*/
+button {
+  padding: 5px 10px;
+  color: navy;
+  border: 2px solid navy;
+  border-radius: 7px;
+  cursor:pointer;
+  margin:15px 0px;
+  background-color:white;
+
+  
+/*'submit answer' button*/
+}
+
+button:hover {
+  background-color: #00e6ac;
+  border: 2px solid #00b300;
+  color: white;
+  text-shadow: 2px 2px 5px #00b300;
+  transition:  background-color 1s, border 1s, color .5s, text-shadow 1s;
+}
+
+
+/*'next question' button*/
+.next_question:hover {
+  background-color: #ffff66;
+  border: 2px solid #cccc00;
+  text-shadow: 2px 2px 5px #4d4d00;
+  transition: background-color 1s, border 1s, text-shadow 1s;
+}
+
+
+/*start and end quiz button*/
+.start_end:hover {
+  background-color: navy;
+  color: white;
+  border: 2px solid navy;
+  text-shadow:none;
+  transition: background-color 1.5s, color 1s;
+}
+
+
+
+
+/*container for the radio button*/
+.radio_container{
+  position:relative;
+  cursor:pointer;
+  user-select: none;
+}
+
+
+/*hide default radio input*/
+input {
+  cursor:pointer;
+  display:none;
+}
+
+/*custom radio input*/
+.checkmark {
+  float:left;
+  position:aboslute;
+  background-color:#E0E0E0;
+  border-radius:50%;
+  transform:translate(0,3px);
+  height:16px;
+  width:16px;
+  margin-left:5px;
+  transition: background-color 0.5s;
+}
+
+/*hovering over the radio input*/
+.radio_container:hover input ~ .checkmark {
+  background-color:#C0C0C0;
+}
+
+/*when the radio input is selected*/
+.radio_container input:checked ~ .checkmark {
+  background-color:#66c2ff;
+  box-shadow: 2px 3px 5px -2px rgba(0,0,0,0.3)
+}
+
+/*little dot when item selected --hide it when not selected*/
+.checkmark:after {
+  content:"";
+  position:absolute;
+  display:none;
+}
+
+
+.radio_container .checkmark:after {
+ 	top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: white;
+  box-shadow: 0 2px 5px 0px rgba(0, 26, 77,0.4);
+}
+
+
+/*display little dot*/
+.radio_container input:checked ~ .checkmark:after {
+  display:block;
+}
 
