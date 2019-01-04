@@ -33,13 +33,9 @@ include 'navigation_bar/navigation.php';
       </p>
     </div>
   </div>
-
-
-  <div class="footer">
-    <div class="footer_items">
-      <p>footer content (creators, link, etc.)</p>
-    </div>
-  </div>
-  
   </body>
 </html>
+
+<?php
+include 'footer/footer.php';
+?>
