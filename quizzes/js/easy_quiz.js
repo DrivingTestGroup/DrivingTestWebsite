@@ -63,8 +63,9 @@ var d=[
 function question() {
 j++;
 num++;
+switch_image();
 document.getElementById("number").innerHTML = num + "/10 Questions";
-document.getElementById("que").innerHTML ='<p class="quiz_question">'+ q[j] +'</p><br><form><label class="radio_container">' + a[j] + '<input type="radio" name="choice" value="'+ a[j] +'"><span class="checkmark"></span></label><br><label class="radio_container">' + b[j] + '<input type="radio" name="choice" value="' + b[j] +'">'+'<span class="checkmark"></span></label><br><label class="radio_container">'+ c[j] + '<input type="radio" name="choice" value="'+ c[j] +'">'+'<span class="checkmark"></span></label><br><label class="radio_container">'+ d[j] + '<input type="radio" name="choice" value="'+ d[j] +'">'+ '<span class="checkmark"></span></label><br></form><button id="submitAnswer" onclick="answer('+ j +')">Submit Answer</button><div id="correct"></div><div id="menu"></div>';
+document.getElementById("que").innerHTML ='<p class="quiz_question">'+ q[j] +'</p><br><form><label class="radio_container"><input type="radio" name="choice" value="'+ a[j] +'"><span class="checkmark"></span><div class="selection_wrap"><p class="selection">' + a[j] + '</p></div></label><br><label class="radio_container"><input type="radio" name="choice" value="' + b[j] +'"><span class="checkmark"></span><div class="selection_wrap"><p class="selection">' + b[j] + '</p></div>'+'</label><br><label class="radio_container"><input type="radio" name="choice" value="'+ c[j] +'"><span class="checkmark"></span><div class="selection_wrap"><p class="selection">'+ c[j] + '</p></div>'+'</label><br><label class="radio_container"><input type="radio" name="choice" value="'+ d[j] +'"><span class="checkmark"></span><div class="selection_wrap"><p class="selection">'+ d[j] + '</p></div>'+ '</label><br></form><button id="submitAnswer" onclick="answer('+ j +')">Submit Answer</button><div id="correct"></div><div id="menu"></div>';
   
 //shows the counter
 document.getElementById("number").classList.add("counter_show");
@@ -119,26 +120,40 @@ function validate() {
 }
 
 
+//switches background images when user reaches a certain question 
+function switch_image() {
+  if (num < 5 && num > 0) {
+    document.getElementById("background").classList.remove("easy_second_background");
+    document.getElementById("background").classList.add("easy_first_background");
+  } else{
+    document.getElementById("background").classList.remove("easy_first_background");
+    document.getElementById("background").classList.add("easy_second_background");
+  }
+}
+
+
 function end(){
-//remov the counter
+//remove the counter
 document.getElementById("number").classList.remove("counter_show");
   
 document.getElementById("number").innerHTML = "";
     if (counter == 10){
-      document.getElementById("que").innerHTML = "<p class='result'>Perfect!</p> <br> You got "+ counter +"/10!";
+      document.getElementById("que").innerHTML = "<p class='result'>Perfect!</p> <br> <p class='score'>You got "+ counter +"/10!</p>";
     }else if (counter > 7){
-      document.getElementById("que").innerHTML = "<p class='result'>Awesome!</p> <br> You got "+ counter +"/10!";
+      document.getElementById("que").innerHTML = "<p class='result'>Awesome!</p> <br> <p class='score'>You got "+ counter +"/10!</p>";
     }else if (counter > 5){
-      document.getElementById("que").innerHTML = "<p class='result'>Practice Makes Perfect!</p><br> You got "+ counter +"/10!";
+      document.getElementById("que").innerHTML = "<p class='result'>Practice Makes Perfect!</p><br> <p class='score'>You got "+ counter +"/10!</p>";
     }else if (counter > 3){
-      document.getElementById("que").innerHTML = "<p class='result'>Good Try! </p><br> You got "+counter +"/10!";
+      document.getElementById("que").innerHTML = "<p class='result'>Good Try! </p><br> <p class='score'>You got "+counter +"/10!</p>";
    }else{
-      document.getElementById("que").innerHTML = "<p class='result'>More practice may be needed.</p> <br> You got "+ counter +"/10!";
+      document.getElementById("que").innerHTML = "<p class='result'>More practice may be needed.</p> <br> <p class='score'>You got "+ counter +"/10!</p>";
    }
 document.getElementById("que").innerHTML +=
-'<br><button onclick= "retry()">Retry!</button>'
+'<br><button onclick= "retry()">Retry!</button>';
 document.getElementById("que").innerHTML +=
-'<br><a href="Hard_Quiz.html">Try the Hard Quiz!</a>'
+'<br><a class="quiz_link" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/quizzes/Medium_Quiz.php">Try the Medium Quiz!</a>';
+document.getElementById("que").innerHTML +=
+'<div class="quiz_underline medium_line"></div>';
 }
 function retry(){
 j=-1;
