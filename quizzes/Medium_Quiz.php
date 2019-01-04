@@ -7,7 +7,6 @@ include '../navigation_bar/navigation.php';
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="quiz_style.css" rel="stylesheet" type="text/css" />
-  <link href="../navigation_bar/navigation_styles.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="js/medium_quiz.js"></script>
   </head>
   <body>
