@@ -12,7 +12,7 @@ include '../navigation_bar/navigation.php';
   <script src="js/hard_quiz.js"></script>
   </head>
   <body>
-  <div class="background">  
+   <div class="background hard_start_background" id="background"> 
     <div class="quiz_container">
       <p class="counter" id="number"></p>
       <div class="quiz" id="que">
@@ -27,3 +27,7 @@ include '../navigation_bar/navigation.php';
   </div>
 </body>
 </html>
+
+<?php
+include '../footer/footer.php';
+?>
