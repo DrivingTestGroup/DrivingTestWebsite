@@ -151,7 +151,7 @@ document.getElementById("number").innerHTML = "";
 document.getElementById("que").innerHTML +=
 '<br><button onclick= "retry()">Retry!</button>';
 document.getElementById("que").innerHTML +=
-'<br><a class="quiz_link" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/quizzes/Medium_Quiz.php">Try the Medium Quiz!</a>';
+'<br><a class="quiz_link" href="Medium_Quiz.html ">Try the Medium Quiz!</a>';
 document.getElementById("que").innerHTML +=
 '<div class="quiz_underline medium_line"></div>';
 }
