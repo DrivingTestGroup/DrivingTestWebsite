@@ -1,1 +1,475 @@
+*, body {
+  margin:0;
+  padding:0;
+  font-family: Verdana,sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
 
+
+
+/*heading*/
+h {
+  font-size:30px;
+  font-weight:bold;
+  color:navy;
+}
+
+
+/*background*/
+.background {
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+  top:66px;
+  position:relative;
+}
+
+/*background pictures for the easy quiz*/
+.easy_start_background {
+  background-image: url(../pictures/quizzes/easy_quiz/start_easy.png);
+}
+
+.easy_first_background {
+   background-image: url(../pictures/quizzes/easy_quiz/driving_road1.png);
+}
+
+.easy_second_background {
+  background-image:url(../pictures/quizzes/easy_quiz/intersection1.png);
+}
+
+
+
+/*background picutres for the medium quiz*/
+.medium_start_background {
+  background-image: url(../pictures/quizzes/medium_quiz/driving_road2.png);
+}
+
+.medium_first_background {
+   background-image: url(../pictures/quizzes/medium_quiz/traffic.png);
+}
+
+.medium_second_background {
+  background-image:url(../pictures/quizzes/medium_quiz/traffic_light1.png);
+}
+
+
+/*background picutres for the hard quiz*/
+.hard_start_background {
+  background-image: url(../pictures/quizzes/hard_quiz/driving_road3.png );
+}
+
+.hard_first_background {
+   background-image: url(../pictures/quizzes/hard_quiz/traffic2.png );
+}
+
+.hard_second_background {
+  background-image:url(../pictures/quizzes/hard_quiz/road_sign.png );
+}
+
+
+
+/*division containing the quiz*/
+.quiz_container {
+  opacity:0.8;
+  background-color:#F5F5F5;
+  padding:20px 40px;
+  width:75%;
+  margin:auto;
+  box-shadow: 5px 10px 8px 5px rgba(0,0,0,0.9);
+}
+
+
+/*questions for the quiz*/
+.quiz_question {
+  font-size: 25px;
+  color:navy;
+  font-weight:bold;
+  text-shadow: 2px 3px #4ddbff;
+}
+
+
+/*counter for the questions*/
+.counter {
+  display:none;
+  padding:20px 10px; 
+  background-color: navy;
+  border-radius:20px;
+  color:white;
+  float:right;
+}
+
+/*shows the counter during the questions*/
+.counter_show {
+  display:block;
+}
+
+
+
+/*result*/
+.result {
+  font-size:25px;
+  font-weight:bold;
+  color:navy;
+  text-shadow: 2px 2px #00ccff;
+}
+
+/*score*/
+.score {
+  font-size:18px;
+  color:#751aff;
+  text-shadow: -1px 0 #4da6ff, 1px 0 #4da6ff, 0 -1px #4da6ff, 0 1px #4da6ff;
+}
+
+
+/*correct or incorrect answer*/
+#correct {
+  font-size:18px;
+  padding: 25px 10px;
+  font-weight:bold;
+}
+
+/*correct answer*/
+.right {
+  color:#00ff00;
+  text-shadow: 0 0 2px  #33ffd6;
+}
+
+/*wrong answer*/
+.wrong {
+  color:red;
+  text-shadow: 0 0 2px #ff6666;
+}
+
+
+/*link*/
+.quiz_link {
+  text-decoration:none;
+  color:#ff3385;
+  font-weight:bold;
+}
+
+
+.quiz_link:hover {
+  text-shadow: 0 3px 2px  #ff99e6;
+  color:#cc0052;
+  transition: text-shadow 0.5s, color 1s;
+}
+
+/*underline below the link*/
+.quiz_underline {
+  opacity:0;
+  background-color:#ff3385;
+  padding: 1px 0;
+  width:1px;
+}
+
+/*show underline when hovering over the link*/
+.quiz_link:hover ~ .quiz_underline {
+  opacity:1;
+  -ms-transform-origin:left;
+  -webkit-transform-origin:left;
+  -moz-transform-origin:left;
+  -o-transform-origin:left;
+  transform-origin:left;
+  transition: transform 1s;
+}
+
+.quiz_link:hover ~ .medium_line {
+  -ms-transform: scaleX(180);
+  -webkit-transform: scaleX(180);
+  -moz-transform: scaleX(180);
+  -o-transform: scaleX(180);
+  transform: scaleX(180);
+}
+
+.quiz_link:hover ~ .hard_line {
+  -ms-transform: scaleX(160);
+  -webkit-transform: scaleX(160);
+  -moz-transform: scaleX(160);
+  -o-transform: scaleX(160);
+  transform: scaleX(160);
+}
+
+
+
+/*buttons*/
+button {
+  padding: 5px 10px;
+  color: navy;
+  border: 2px solid navy;
+  border-radius: 7px;
+  cursor:pointer;
+  margin:15px 0;
+  background-color:white;
+
+  
+/*'submit answer' button*/
+}
+
+button:hover {
+  background-color: #00e6ac;
+  border: 2px solid #00b300;
+  color: white;
+  text-shadow: 2px 2px 5px #00b300;
+  transition:  background-color 1s, border 1s, color .5s, text-shadow 1s;
+}
+
+
+/*'next question' button*/
+.next_question:hover {
+  background-color: #ffff66;
+  border: 2px solid #cccc00;
+  text-shadow: 2px 2px 5px #4d4d00;
+  transition: background-color 1s, border 1s, text-shadow 1s;
+}
+
+
+/*start and end quiz button*/
+.start_end:hover {
+  background-color: navy;
+  color: white;
+  border: 2px solid navy;
+  text-shadow:none;
+  transition: background-color 1.5s, color 1s;
+}
+
+
+
+
+/*container for the radio button*/
+.radio_container{
+  position:relative;
+  cursor:pointer;
+  user-select: none;
+}
+
+
+/*hide default radio input*/
+input {
+  cursor:pointer;
+  display:none;
+}
+
+/*custom radio input*/
+.checkmark {
+  float:left;
+  background-color:#E0E0E0;
+  border-radius:50%;
+  -ms-transform:translate(0,15px);
+  -webkit-transform:translate(0,15px);
+  -moz-transform:translate(0,15px);
+  -o-transform:translate(0,15px);
+  transform:translate(0,15px);
+  height:15px;
+  width:15px;
+  margin-left:5px;
+  transition: background-color 0.5s;
+  border:2px solid navy;
+  margin-right:15px;
+}
+
+
+/*hovering over the radio input*/
+.radio_container:hover input ~ .checkmark {
+  background-color:navy;
+  border-color:#33d6ff;
+  transition: border-color 0.5s, background-color 1s;
+}
+
+/*when the radio input is selected*/
+.radio_container input:checked ~ .checkmark {
+  background-color:#66c2ff;
+  box-shadow: 2px 3px 5px -2px rgba(0,0,0,0.3);
+}
+
+/*little dot when item selected --hide it when not selected*/
+.checkmark:after {
+  content:"";
+  position:absolute;
+  display:none;
+}
+
+
+.radio_container .checkmark:after {
+ 	top: 4px;
+	left: 4.5px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: white;
+  box-shadow: 0 3px 5px 0 rgba(0, 26, 77,0.4);
+}
+
+
+
+/*display little dot*/
+.radio_container input:checked ~ .checkmark:after {
+  display:block;
+}
+
+
+
+/*selection*/
+.selection {
+  display:inline;
+  position:absolute;
+  font-size:18px;
+}
+
+
+/*wrap*/
+.selection_wrap {
+  position:inherit;
+  padding:0.7em 0 2em 5px;
+}
+
+
+
+
+
+/*when the screen width is smaller than 700px*/
+@media screen and (max-width: 700px) {
+  /*background*/
+  .background {
+    top:0;
+  }
+  
+  /*question for the quiz*/
+  .quiz_question {
+    font-size: 20px;
+  }
+  
+  /*selection choices*/
+  .selection{
+    font-size:16px;
+  }
+}
+
+
+
+/*when the screen width is smaller than 550px*/
+@media screen and (max-width: 550px) {
+  /*selection choices*/
+  .selection{
+    font-size:14px;
+  }
+  
+  /*correct or incorrect statement*/
+  #correct {
+    font-size:16px;
+  }
+  
+  /*counter for the questions*/
+  .counter {
+    font-size:14px;
+    padding:15px 5px;
+  }
+  
+}
+
+
+/*when the screen width is smaller than 500px*/
+@media screen and (max-width: 500px) {
+  /*questions for the quiz*/
+  .quiz_question {
+    font-size: 17px;
+  }
+  
+  /*background*/
+  .background {
+    min-height:800px;
+  }
+  
+  /*counter for the questions*/
+  .counter {
+    font-size:12px;
+  }
+  
+  /*selection choices*/
+  .selection{
+    font-size:13px;
+  }
+  
+  /*radio button*/
+  .checkmark {
+    height: 12px;
+    width: 12px;
+    -ms-transform: translate(0,12px);
+    -webkit-transform: translate(0,12px);
+    -moz-transform: translate(0,12px);
+    -o-transform: translate(0,12px);
+    transform: translate(0,12px);
+    margin-right: 12px;
+  }
+  
+  /*dot inside the radio button*/
+  .radio_container .checkmark:after {
+    top: 3px;
+    left: 3.5px;
+    width: 6px;
+    height: 6px;
+  }
+  
+  /*result from the quiz*/
+  .result{
+    font-size:20px;
+  }
+  
+  /*score from the quiz*/
+  .score{
+    font-size:15px;
+  }
+  
+  /*link to different quiz*/
+  .quiz_link{
+    font-size:14px;
+  }
+}
+
+
+/*when the screen width is smaller than 450px*/
+@media screen and (max-width: 450px) {
+  /*correct and incorrect statement*/
+  #correct {
+    font-size:13px;
+  }
+  
+  /*buttons*/
+  button{
+    font-size:12px;
+  }
+  
+  .counter {
+    font-size:10px;
+  }
+  
+  .quiz_question{
+    font-size:15px;
+  }
+}
+
+
+/*when the screen width is smaller than 400px*/
+@media screen and (max-width: 400px) {
+  /*container for the quiz*/
+  .quiz_container{
+    padding:20px 30px;
+  }
+  
+  /*selection choices*/
+  .selection{
+    font-size:12px;
+  }
+  
+  /*counter for the questions*/
+  .counter{
+    -ms-transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+}
