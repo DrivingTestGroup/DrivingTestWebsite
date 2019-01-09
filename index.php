@@ -13,8 +13,7 @@ include 'navigation_bar/navigation.php';
 
   <div class="home_image">
     <div class="cnt_head_home_img"> 
-      <h2 class="header"> All Roads Begin Here.
- Start learning how to drive today! </h2>
+      <h2 class="header"> All Roads Begin Here! </h2>
     </div>
   </div>
 
