@@ -9,20 +9,20 @@ var q=[
         "Please Stop",
         ];
 var a=[
-        'Should you stop after the white line?', 
+        'Should you stop before the white line?\n', 
         'Should you keep going because you are coming from the opposite side of the road?',
-        'Turning radius of your car.',
-        'Wait for the light to turn green.',
+        'Should you go below the speed limit and go slow?\n',
+        'Should the Red car go first?',
         'Since the light is green, should you go?',
         "Should this collision not reported because no one was harmed and the damages were under $2000 dollars?\n",
         ];
 var alen= a.length;
 var b=[
-        'Should you stop before the white line?\n', 
+        'Should you stop after the white line?',
         'Should you stop 20 meters from where the bus is stopped and only proceed until the bus moves or the overhead lights have stopped flashing?\n',
-        'Height of curb.',
-        'Obey the officers signal and go throught at once.\n',
-        'Should you stay?',
+        'Should you drive fast in this weather because you have good tries with deep tread and you have clear visibility?',
+        'Should the Blue car go first?\n',
+        'Should you stay?\n',
         "Should this collision be reported?",
         ];
 var c=[
