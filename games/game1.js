@@ -1,29 +1,29 @@
 
 var ans, i, len, x, z, y, counter=0, j= -1, n, num=0;
 var q=[
-        "Never change lanes in traffic without:",
-        "What must a driver do before entering a highway from a private road or driveway?",
-        "When you are deciding whether or not to make a U-turn, your first consideration should be to check:",
-        "When approaching an intersection where a traffic signal light is red and a police officer motions you to go through, you should:",
-        "To get your vehicle out of a skid, you should first:",
-        "Under what circumstances may a driver's licence be cancelled?",
+        "Stop Sign and White Line",
+        "Stopped Bus",
+        "Should You Go Slow or Fast?",
+        "Who Should Go First?",
+        "Should You Stay or Should You Go?",
+        "Please Stop",
         ];
 var a=[
-        'Looking in the rear view mirror only.', 
-        'Yield right-of-way to all vehicles approaching on the highway.\n',
+        'Should you stop after the white line?', 
+        'Should you keep going because you are coming from the opposite side of the road?',
         'Turning radius of your car.',
         'Wait for the light to turn green.',
-        'Apply brakes hard.',
-        "For failure to attend driver re-examination.",
+        'Since the light is green, should you go?',
+        "Should this collision not reported because no one was harmed and the damages were under $2000 dollars?\n",
         ];
 var alen= a.length;
 var b=[
-        'Giving proper signal and looking to make sure the move can be made safely.\n', 
-        'Enter or cross the highway as quickly as possible.',
+        'Should you stop before the white line?\n', 
+        'Should you stop 20 meters from where the bus is stopped and only proceed until the bus moves or the overhead lights have stopped flashing?\n',
         'Height of curb.',
         'Obey the officers signal and go throught at once.\n',
-        'Steer straight ahead.',
-        "For possesion of altered driver's licence.",
+        'Should you stay?',
+        "Should this collision be reported?",
         ];
 var c=[
         'please_stop.mp4',
@@ -34,12 +34,12 @@ var c=[
         'please_stop.mp4'
         ];
 var d=[
-        'dsfbsdcv',
-        'efgdsbg',
-        'erwgsdfgf',
-        'reywthgdfsg',
-        'adsgdgfads',
-        'asfd'
+        ' ',
+        'Drivers on the opposite side of the road can proceed only if a medium is put up. (A median is a raised, lowered or earth strip dividing a road where vehicles travel in both directions.) ',
+        ' ',
+        'Because this is an all-way stop sign, the vehicle that stops first will be allowed to proceed first.',
+        "Even knowing that it is your right of way, you should still stop so that you don't injure the pedestrian.",
+        ' '
         ];
 
 function question() {
