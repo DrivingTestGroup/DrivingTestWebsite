@@ -12,7 +12,7 @@ var myScore;
 
 function start(){
   document.getElementById("the").innerHTML = ' ';
-    document.getElementById("hi").innerHTML = '<button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br><button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button><button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br><button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>';
+    //document.getElementById("hi").innerHTML = '<button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br><button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button><button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br><button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>';
     startGame();
 }
 
@@ -195,7 +195,7 @@ function updateGameArea() {
     myGamePiece.newPos(); 
     myGamePiece.update();
 }
-function moveup() {
+/*function moveup() {
     myGamePiece.speedY = -1; 
 }
 
@@ -214,4 +214,4 @@ function moveright() {
 function clearmove() {
     myGamePiece.speedX = 0; 
     myGamePiece.speedY = 0; 
-}
+}*/
