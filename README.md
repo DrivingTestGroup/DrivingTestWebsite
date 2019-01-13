@@ -4,4 +4,6 @@ Both of the links below take you to the same page:
 
 www.g1drivingtestwebsite.tk
 
-wwwg1drivingtestwebsitetk.000webhostapp.com 
+or
+
+http://www.g1drivingtestsite.dx.am/
