@@ -46,7 +46,7 @@ function question() {
 j++;
 num++;
 document.getElementById("number").innerHTML = num + "/10 Questions";
-document.getElementById("game").innerHTML ="<video width='320' height='240' controls><source src= '" + c[j] +"' type='video/mp4'><Your browser does not support the video tag.</video>";
+document.getElementById("game").innerHTML ="<video width='320' height='240' autoplay loop><source src= '" + c[j] +"' type='video/mp4'><Your browser does not support the video tag.</video>";
 document.getElementById("que").innerHTML = '<p class="quiz_question">'+ q[j] +'</p><br><form><label class="radio_container"><input type="radio" name="choice" value="'+ a[j] +'"><span class="checkmark"></span><div class="selection_wrap"><p class="selection">' + a[j] + '</p></div></label><br><label class="radio_container"><input type="radio" name="choice" value="' + b[j] +'"><span class="checkmark"></span><div class="selection_wrap"><p class="selection">' + b[j] + '</p></div>'+ '</label><br></form><button id="submitAnswer" onclick="answer('+ j +')">Submit Answer</button><div id="correct"></div><div id="menu"></div>';
 
 //shows the counter
