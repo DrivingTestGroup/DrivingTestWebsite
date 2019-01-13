@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>type="text/javascript" src="game2.js"</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
 canvas {
     border:1px solid #d3d3d3;
     background-color: #737373;
-    width: 80%;
-    length: 100%;
 }
 </style>
 </head>
 <body>
 <p id="the">
+    <h>Don't Crash!</h><br>
 <button onclick="start()">Start!</button><br>
 Use your arrow keys to control your car!<br>
 Don't get to close to the other cars and perdestians!<br>
 Get the gas to increase your score!
 </p>
-<script>
 
 var myGamePiece;
 var myObstacles = [];
 var myPeople = [];
 var roadLine = [];
 var grass1, grass2, gas = [];
-var myOb = ["pictures/car3.png", "pictures/car2.png", "pictures/car4.png", "pictures/car5.png"];
-var myPed = ["pictures/man1.png", "pictures/man2.png"];
+var myOb = ["pictures/car3.png", "../pictures/car2.png", "../pictures/car2car4.png", "../pictures/car5.png"];
+var myPed = ["../pictures/man1.png", "../pictures/man2.png"];
 var myPedY = [60, 60];
 var myPedX = [30, 25];
 var myScore;
@@ -38,7 +37,7 @@ function start(){
 }
 
 function startGame() {
-    myGamePiece = new component(80, 50, "pictures/car.png", 10, 120, "image"); 
+    myGamePiece = new component(80, 50, "../pictures/car.png", 10, 120, "image"); 
     myScore = new component("15px", "Consolas", "black", 370, 35, "text");
     grass1 = new component(600, 20, "#00b300", 0, 0);   
     grass2 = new component(600, 20, "#00b300", 0, 250);  
@@ -129,13 +128,13 @@ function updateGameArea() {
         if (myGamePiece.crashWith(myObstacles[i])) {
             myGameArea.stop();
            myGameArea.clear();
-            document.getElementById("hi").innerHTML = 'Score: ' + (myGameArea.frameNo + bonus) + '<br> Good Game . . . YOU MURDERER!<br><button onclick="location.reload()">Try Again?</button>'
+            document.getElementById("hi").innerHTML = 'Score: ' + (myGameArea.frameNo + bonus+1) + '<br> Good Game . . . YOU MURDERER!<br><button onclick="location.reload()">Try Again?</button>'
         } 
     }
         for (i = 0; i < myPeople.length; i += 1) {
         if (myGamePiece.crashWith(myPeople[i])) {
             myGameArea.stop();
-            document.getElementById("hi").innerHTML = 'Score: ' + (myGameArea.frameNo + bonus) + '<br> Good Game . . . YOU MURDERER!<br><button onclick="location.reload()">Try Again?</button>'
+            document.getElementById("hi").innerHTML = 'Score: ' + (myGameArea.frameNo + bonus +1) + '<br> Good Game . . . YOU MURDERER!<br><button onclick="location.reload()">Try Again?</button>'
         } 
     }
     for (i = 0; i < gas.length; i += 1) {
@@ -187,7 +186,7 @@ function updateGameArea() {
       if (myGameArea.frameNo == 50 || everyinterval(300)) {
         x = myGameArea.canvas.width;
         y = Math.floor((Math.random() * (myGameArea.canvas.height-500)) + (myGameArea.canvas.height-60));
-        gas.push(new component(30, 30, "pictures/green.png", x, y, "image"));
+        gas.push(new component(30, 30, "../pictures/green.png", x, y, "image"));
     }
     if (myGameArea.frameNo == 1 || everyinterval(100)) {
         x = myGameArea.canvas.width;
