@@ -11,6 +11,6 @@ Both of the links below reach the same page.
 
 www.g1drivingtestwebsite.tk 
 
-www.g1drivingtestsite.dx.am/
+www.g1drivingtestsite.dx.am
 
 
