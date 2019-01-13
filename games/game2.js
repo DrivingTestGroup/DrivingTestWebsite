@@ -104,16 +104,16 @@ function component(width, height, color, x, y, type) {
 var bonus=0;
 function updateGameArea() {
     var x, y, z, w, v, d, y1, k, s, d, r;
-    for (i = 0; i < myObstacles.length; i += 1) {
+        for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
             myGameArea.stop();
-            document.getElementById("hi").innerHTML = 'Good Game . . . YOU MURDERER!<br><button onclick="location.reload()">Try Again?</button>'
+            document.getElementById("hi").innerHTML = 'Score: ' + (myGameArea.frameNo + bonus) + '<br> Good Game . . . YOU MURDERER!<br><button onclick="location.reload()">Try Again?</button>'
         } 
     }
         for (i = 0; i < myPeople.length; i += 1) {
         if (myGamePiece.crashWith(myPeople[i])) {
             myGameArea.stop();
-            document.getElementById("hi").innerHTML = 'Good Game . . . YOU MURDERER!<br><button onclick="location.reload()">Try Again?</button>'
+            document.getElementById("hi").innerHTML = 'Score: ' + (myGameArea.frameNo + bonus) + 'Good Game . . . YOU MURDERER!<br><button onclick="location.reload()">Try Again?</button>'
         } 
     }
     for (i = 0; i < gas.length; i += 1) {
