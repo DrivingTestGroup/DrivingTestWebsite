@@ -2,7 +2,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="navigation_styles.css">
+  <link rel="stylesheet" type="text/css" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/navigation_bar/navigation_styles.css">
+  <script type="text/javascript" src="https://wwwg1drivingtestwebsitetk.000webhostapp.com/touchphone_hover/can_touch.js"></script>
+  
 </head>
 <body>
 
@@ -22,7 +24,7 @@
       </div>
       
           <div class="xs_navbar">
-        <a class="xs_menu_link" href="index.html"> HOME 
+        <a class="xs_menu_link" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com"> HOME 
           <div class="underline">
           </div>
         </a>
@@ -33,13 +35,9 @@
           </div>
         </div>
           <div class="xs_dropdown_content">
-                      <a class="dropdown-selection" href="info_pages/introduction.html"> What is the G1 Test? </a>
-
-          <a class="xs_dropdown-selection" href="info_pages/How_to_get_it.html "> How to get it </a>
+                      <a class="dropdown-selection" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/info_pages/What_is_the_G1_Test.php"> What is the G1 Test? </a>
 
           <a class="xs_dropdown-selection" href="info_pages/Ontario_Drivers_Handbook.html">Ontario Drivers Handbook </a>
-
-          <a class="xs_dropdown-selection" href="info_pages/When_and_Where.html"> When and Where</a>
 
           <a class="xs_dropdown-selection" href="info_pages/More_Information.html"> More Information </a>
           </div>
@@ -93,7 +91,7 @@
   
  
   <div class="navbar" id="stickyNavbar">
-    <a class="menu-link" href="index.html"> HOME 
+    <a class="menu-link" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com"> HOME 
       <div class="underline">
     </div> </a>
       
@@ -106,13 +104,9 @@
         <i class="fa fa-caret-down"></i>
       </div>
         <div class="dropdown-content">
-          <a class="dropdown-selection" href="info_pages/introduction.html"> What is the G1 Test? </a>
+          <a class="dropdown-selection" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/info_pages/What_is_the_G1_Test.php"> What is the G1 Test? </a>
 
           <a class="dropdown-selection" href="info_pages/How_to_get_it.html "> How to get it </a>
-
-          <a class="dropdown-selection" href="info_pages/Ontario_Drivers_Handbook.html">Ontario Drivers Handbook </a>
-
-          <a class="dropdown-selection" href="info_pages/When_and_Where.html"> When and Where</a>
 
           <a class="dropdown-selection" href="info_pages/More_Information.html"> More Information </a>
         </div>
