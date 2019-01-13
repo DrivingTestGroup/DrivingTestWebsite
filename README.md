@@ -11,6 +11,6 @@ Both of the links below reach the same page.
 
 www.g1drivingtestwebsite.tk 
 
-wwwg1drivingtestwebsitetk.000webhostapp.com 
+www.g1drivingtestsite.dx.am/
 
 
