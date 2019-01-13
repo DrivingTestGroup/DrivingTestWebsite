@@ -113,7 +113,7 @@ function updateGameArea() {
         for (i = 0; i < myPeople.length; i += 1) {
         if (myGamePiece.crashWith(myPeople[i])) {
             myGameArea.stop();
-            document.getElementById("hi").innerHTML = 'Score: ' + (myGameArea.frameNo + bonus+1) + 'Good Game . . . YOU MURDERER!<br><button onclick="location.reload()">Try Again?</button>'
+            document.getElementById("hi").innerHTML = 'Score: ' + (myGameArea.frameNo + bonus+1) + '<br> Good Game . . . YOU MURDERER!<br><button onclick="location.reload()">Try Again?</button>'
         } 
     }
     for (i = 0; i < gas.length; i += 1) {
