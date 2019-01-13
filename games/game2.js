@@ -4,8 +4,8 @@ var myObstacles = [];
 var myPeople = [];
 var roadLine = [];
 var grass1, grass2, gas = [];
-var myOb = ["car3.png", "car2.png", "car4.png", "car5.png"];
-var myPed = ["man1.png", "man2.png"];
+var myOb = ["../pictures/car3.png", "../pictures/car2.png", "../pictures/car4.png", "../pictures/car5.png"];
+var myPed = ["../pictures/man1.png", "../pictures/man2.png"];
 var myPedY = [60, 60];
 var myPedX = [30, 25];
 var myScore;
@@ -17,7 +17,7 @@ function start(){
 }
 
 function startGame() {
-    myGamePiece = new component(80, 50, "car.png", 10, 120, "image"); 
+    myGamePiece = new component(80, 50, "../pictures/car.png", 10, 120, "image"); 
     myScore = new component("15px", "Consolas", "black", 370, 35, "text");
     grass1 = new component(600, 20, "#00b300", 0, 0);   
     grass2 = new component(600, 20, "#00b300", 0, 250);  
@@ -165,7 +165,7 @@ function updateGameArea() {
       if (myGameArea.frameNo == 50 || everyinterval(300)) {
         x = myGameArea.canvas.width;
         y = Math.floor((Math.random() * (myGameArea.canvas.height-500)) + (myGameArea.canvas.height-60));
-        gas.push(new component(30, 30, "green.png", x, y, "image"));
+        gas.push(new component(30, 30, "../pictures/green.png", x, y, "image"));
     }
     if (myGameArea.frameNo == 1 || everyinterval(100)) {
         x = myGameArea.canvas.width;
