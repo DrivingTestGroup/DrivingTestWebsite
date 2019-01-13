@@ -121,7 +121,7 @@ document.getElementById("number").innerHTML = "";
 document.getElementById("que").innerHTML +=
 '<br><button onclick= "retry()">Retry!</button>';
 document.getElementById("que").innerHTML +=
-'<br><a class="quiz_link " href="Hard_Quiz.html">Try the Hard Quiz!</a>';
+'<br><a class="quiz_link " href=game2.html">Play a Game!</a>';
 document.getElementById("que").innerHTML +=
 '<div class="quiz_underline hard_line"></div>';
 }
