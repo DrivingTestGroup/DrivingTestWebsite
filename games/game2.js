@@ -12,6 +12,7 @@ var myScore;
 
 function start(){
   document.getElementById("the").innerHTML = ' ';
+  //buttons for moving up down left right
     //document.getElementById("hi").innerHTML = '<button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br><button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button><button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br><button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>';
     startGame();
 }
@@ -125,6 +126,7 @@ function updateGameArea() {
     myGameArea.clear();
     myGamePiece.speedX = 0;
   myGamePiece.speedY = 0; 
+  //arrow keys control
   if (myGameArea.key && myGameArea.key == 37) {myGamePiece.speedX = -1; }
   if (myGameArea.key && myGameArea.key == 39) {myGamePiece.speedX = 1; }
   if (myGameArea.key && myGameArea.key == 38) {myGamePiece.speedY = -1; }
@@ -195,6 +197,7 @@ function updateGameArea() {
     myGamePiece.newPos(); 
     myGamePiece.update();
 }
+//functions for moving with buttons
 /*function moveup() {
     myGamePiece.speedY = -1; 
 }
