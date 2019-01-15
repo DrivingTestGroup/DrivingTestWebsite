@@ -1,3 +1,11 @@
 body{
   background-color: rgb(138, 138, 207);
 }
+
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #737373;
+  width: 80%;
+  length: 100%;
+  margin: auto;
+}
