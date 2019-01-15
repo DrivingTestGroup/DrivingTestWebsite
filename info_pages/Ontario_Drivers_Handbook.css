@@ -1,0 +1,17 @@
+h1{
+  color:#33adff;
+  text-align: center;
+  margin: auto;
+}
+h2{
+  color:#FFFFFF;
+  text-align:center;
+  
+}
+body {
+        height: 1300px;
+        width: 1000px;
+        background-image: url('https://www.vactualpapers.com/web/wallpapers/just-follow-the-road-nature-hd-wallpaper/thumbnail/lg.jpg');  
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
