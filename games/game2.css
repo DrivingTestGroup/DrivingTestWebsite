@@ -5,7 +5,7 @@ body{
 canvas {
   border:5px solid black;
   background-color: #737373;
-  width: 80%;
-  length: 100%;
+  width: 50%;
+  length: 80%;
   margin: auto;
 }
