@@ -9,7 +9,17 @@ var myPedY = [60, 60];
 var myPedX = [30, 25];
 var myScore;
 
+function hide() {
+  var x = document.getElementById("the");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 function start(){
+  hide();
   document.getElementById("the").innerHTML = ' ';
     //document.getElementById("hi").innerHTML = '<button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br><button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button><button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br><button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>';
     startGame();
