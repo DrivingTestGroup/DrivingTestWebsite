@@ -24,22 +24,23 @@ canvas {
   border-radius:20px;
   text-align:center;
 }
+.header{
+  color:#33adff;
+  font-size: 70px;
+}
 #score{
   color: 	black;
   background-color:#F5F5F5;
   opacity: 0.9;
   padding: 20px 30px;
   position:absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%,-50%);
   border-radius:20px;
   text-align:center;
 }
-.header{
-  color:#33adff;
-  font-size: 70px;
-}
+
 button {
   padding: 5px 10px;
   color: #33adff;
