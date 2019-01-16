@@ -1,6 +1,9 @@
 body{
   background-image: url("../pictures/game2pic.png");
+  background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+}
 
 
 canvas {
@@ -10,4 +13,17 @@ canvas {
   length: 70%;
   margin-left:25%;
   margin-top:5%;
+}
+
+.the{
+  color: 	#33adff;
+  background-color:#F5F5F5;
+  opacity: 0.9;
+  padding: 20px 30px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius:20px;
+  text-align:center;
 }
