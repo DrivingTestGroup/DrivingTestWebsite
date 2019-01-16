@@ -4,7 +4,6 @@ body{
   background-size: cover;
   background-position: center;
 }
-
 canvas {
   border:5px solid black;
   background-color: #737373;
@@ -26,7 +25,36 @@ canvas {
   border-radius:20px;
   text-align:center;
 }
+#score{
+  color: 	black;
+  background-color:#F5F5F5;
+  opacity: 0.9;
+  padding: 20px 30px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius:20px;
+  text-align:center;
+}
 .header{
   color:#33adff;
   font-size: 70px;
+}
+button {
+  padding: 5px 10px;
+  color: #33adff;
+  border: 2px solid #33adff;
+  border-radius: 7px;
+  cursor:pointer;
+  margin:15px 0;
+  background-color:white;
+}
+
+button:hover {
+  background-color: #00e6ac;
+  border: 2px solid #00b300;
+  color: white;
+  text-shadow: 2px 2px 5px #00b300;
+  transition:  background-color 1s, border 1s, color .5s, text-shadow 1s;
 }
