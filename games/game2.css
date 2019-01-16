@@ -1,11 +1,13 @@
 body{
   background-image: url("../pictures/game2pic.jpg");
-}
+  background-size: cover;
+
 
 canvas {
   border:5px solid black;
   background-color: #737373;
-  width: 30%;
-  length: 50%;
-  margin-left:35%;
+  width: 50%;
+  length: 70%;
+  margin-left:25%;
+  margin-top:5%;
 }
