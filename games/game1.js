@@ -45,7 +45,7 @@ var d=[
 function question() {
 j++;
 num++;
-document.getElementById("number").innerHTML = num + "/10 Questions";
+document.getElementById("number").innerHTML = num + "/6 Questions";
 document.getElementById("game").innerHTML ="<video width='320' height='240' autoplay loop><source src= '" + c[j] +"' type='video/mp4'><Your browser does not support the video tag.</video>";
 document.getElementById("que").innerHTML = '<p class="quiz_question">'+ q[j] +'</p><br><form><label class="radio_container"><input type="radio" name="choice" value="'+ a[j] +'"><span class="checkmark"></span><div class="selection_wrap"><p class="selection">' + a[j] + '</p></div></label><br><label class="radio_container"><input type="radio" name="choice" value="' + b[j] +'"><span class="checkmark"></span><div class="selection_wrap"><p class="selection">' + b[j] + '</p></div>'+ '</label><br></form><button id="submitAnswer" onclick="answer('+ j +')">Submit Answer</button><div id="correct"></div><div id="menu"></div>';
 
@@ -105,18 +105,18 @@ function validate() {
 function end(){
 //remove the counter
 document.getElementById("number").classList.remove("counter_show");    
-    
+document.getElementById("game").innerHTML = "";    
 document.getElementById("number").innerHTML = "";
-    if (counter == 10){
-      document.getElementById("que").innerHTML = "<p class='result'>Perfect!</p> <br> <p class='score'>You got "+ counter +"/10!</p>";
-    }else if (counter > 7){
-      document.getElementById("que").innerHTML = "<p class='result'>Awesome!</p> <br> <p class='score'>You got "+ counter +"/10!</p>";
-    }else if (counter > 5){
-      document.getElementById("que").innerHTML = "<p class='result'>Practice Makes Perfect!</p><br> <p class='score'>You got "+ counter +"/10!</p>";
+    if (counter == 6){
+      document.getElementById("que").innerHTML = "<p class='result'>Perfect!</p> <br> <p class='score'>You got "+ counter +"/6!</p>";
+    }else if (counter > 4){
+      document.getElementById("que").innerHTML = "<p class='result'>Awesome!</p> <br> <p class='score'>You got "+ counter +"/6!</p>";
     }else if (counter > 3){
-      document.getElementById("que").innerHTML = "<p class='result'>Good Try! </p><br> <p class='score'>You got "+counter +"/10!</p>";
+      document.getElementById("que").innerHTML = "<p class='result'>Practice Makes Perfect!</p><br> <p class='score'>You got "+ counter +"/6!</p>";
+    }else if (counter > 1){
+      document.getElementById("que").innerHTML = "<p class='result'>Good Try! </p><br> <p class='score'>You got "+counter +"/6!</p>";
    }else{
-      document.getElementById("que").innerHTML = "<p class='result'>More practice may be needed.</p> <br> <p class='score'>You got "+ counter +"/10!</p>";
+      document.getElementById("que").innerHTML = "<p class='result'>More practice may be needed.</p> <br> <p class='score'>You got "+ counter +"/6!</p>";
    }
 document.getElementById("que").innerHTML +=
 '<br><button onclick= "retry()">Retry!</button>';
