@@ -8,15 +8,17 @@
 
 /*title*/
 .title {
-  background-color:white;
+  background-color:#F5F5F5;
   padding:20px 10px 5px 10px;
   height:40pt;
-  overflow:hidden;
 }
 
 /*words for the title*/
 .title-heading {
-  font-size:30px
+  font-size:35px;
+  color: #003366;
+  font-family: "Tahoma";
+  text-shadow: 1px 2px 2px  #66c2ff;
 }
 
 
