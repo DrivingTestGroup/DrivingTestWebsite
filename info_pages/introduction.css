@@ -2,11 +2,7 @@ h1{
   color:#33adff;
   text-align: center;
 }
-h2{
-  color:rgb(10, 10, 10);
-  text-align: center;
-  
-}
+
 body {
 
         background-image: url('https://images.wallpaperscraft.com/image/mountains_road_marking_119081_3840x2400.jpg');  
@@ -42,7 +38,7 @@ div{
 }
 
 #ODN{
-    float: left;
+    float: right;
   top: 60%;
   right: 20%;
 
