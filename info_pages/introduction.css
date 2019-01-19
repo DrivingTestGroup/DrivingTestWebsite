@@ -25,3 +25,52 @@ div{
   max-width: 50%;
   box-shadow: 0px 10px 8px 5px black;
 }
+
+/*link*/
+.quiz_link {
+  text-decoration:none;
+  color:#ff3385;
+  font-weight:bold;
+}
+
+
+.quiz_link:hover {
+  text-shadow: 0 3px 2px  #ff99e6;
+  color:#cc0052;
+  transition: text-shadow 0.5s, color 1s;
+}
+
+/*underline below the link*/
+.quiz_underline {
+  opacity:0;
+  background-color:#ff3385;
+  padding: 1px 0;
+  width:1px;
+}
+
+/*show underline when hovering over the link*/
+.quiz_link:hover ~ .quiz_underline {
+  opacity:1;
+  -ms-transform-origin:left;
+  -webkit-transform-origin:left;
+  -moz-transform-origin:left;
+  -o-transform-origin:left;
+  transform-origin:left;
+  transition: transform 1s;
+}
+
+.quiz_link:hover ~ .medium_line {
+  -ms-transform: scaleX(180);
+  -webkit-transform: scaleX(180);
+  -moz-transform: scaleX(180);
+  -o-transform: scaleX(180);
+  transform: scaleX(180);
+}
+
+.quiz_link:hover ~ .hard_line {
+  -ms-transform: scaleX(160);
+  -webkit-transform: scaleX(160);
+  -moz-transform: scaleX(160);
+  -o-transform: scaleX(160);
+  transform: scaleX(160);
+}
