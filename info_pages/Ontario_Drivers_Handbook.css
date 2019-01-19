@@ -5,7 +5,8 @@ h1{
 }
 
 body {
-        background-image: url('https://www.vactualpapers.com/web/wallpapers/just-follow-the-road-nature-hd-wallpaper/thumbnail/lg.jpg');  
+        //background-image: url('https://www.vactualpapers.com/web/wallpapers/just-follow-the-road-nature-hd-wallpaper/thumbnail/lg.jpg'); 
+        background-image: url('../pictures/winter.jpg');
         background-repeat: no-repeat;
         background-size: cover;
       }
