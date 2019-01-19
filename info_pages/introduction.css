@@ -42,6 +42,8 @@ div{
 }
 
 #ODN{
-  top: 30%;
-  left: 80%;
+    float: left;
+  top: 60%;
+  right: 20%;
+
 }
