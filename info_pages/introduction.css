@@ -8,8 +8,7 @@ h2{
   
 }
 body {
-        height: 1300px;
-        width: 1000px;
+
         background-image: url('https://images.wallpaperscraft.com/image/mountains_road_marking_119081_3840x2400.jpg');  
         background-repeat: no-repeat;
         background-size: cover;
@@ -24,6 +23,7 @@ div{
   position: relative;
   max-width: 50%;
   box-shadow: 0px 10px 8px 5px black;
+  text-align: center;
 }
 
 /*link*/
@@ -67,10 +67,4 @@ div{
   transform: scaleX(180);
 }
 
-.quiz_link:hover ~ .hard_line {
-  -ms-transform: scaleX(160);
-  -webkit-transform: scaleX(160);
-  -moz-transform: scaleX(160);
-  -o-transform: scaleX(160);
-  transform: scaleX(160);
-}
+
