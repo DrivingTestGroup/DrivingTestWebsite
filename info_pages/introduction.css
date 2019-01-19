@@ -40,8 +40,6 @@ div{
   transition: text-shadow 0.5s, color 1s;
 }
 
-
-
-
-
-
+#ODN{
+  top: 50%;
+}
