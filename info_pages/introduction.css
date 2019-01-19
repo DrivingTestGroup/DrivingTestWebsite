@@ -59,12 +59,6 @@ div{
   transition: transform 1s;
 }
 
-.quiz_link:hover ~ .medium_line {
-  -ms-transform: scaleX(180);
-  -webkit-transform: scaleX(180);
-  -moz-transform: scaleX(180);
-  -o-transform: scaleX(180);
-  transform: scaleX(180);
-}
+
 
 
