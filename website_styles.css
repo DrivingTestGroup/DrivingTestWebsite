@@ -73,8 +73,8 @@
 
 /*hovering over menu buttons*/
 .navbar a:hover, .dropdown:hover .dropdown-button {
-  background-color: #F5F5F5;
-  color:black;
+  background-color: #193366;
+  color:white;
 }
 
 
