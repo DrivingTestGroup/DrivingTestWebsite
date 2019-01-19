@@ -40,24 +40,7 @@ div{
   transition: text-shadow 0.5s, color 1s;
 }
 
-/*underline below the link*/
-.quiz_underline {
-  opacity:0;
-  background-color:#ff3385;
-  padding: 1px 0;
-  width:1px;
-}
 
-/*show underline when hovering over the link*/
-.quiz_link:hover ~ .quiz_underline {
-  opacity:1;
-  -ms-transform-origin:left;
-  -webkit-transform-origin:left;
-  -moz-transform-origin:left;
-  -o-transform-origin:left;
-  transform-origin:left;
-  transition: transform 1s;
-}
 
 
 
