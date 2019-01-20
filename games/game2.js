@@ -142,6 +142,12 @@ function updateGameArea() {
     if (myGameArea.frameNo <= 1000){
       d=250;
       k=-1;
+    }else if (myGameArea.frameNo >= 4000){
+      d=50;
+      k=-3.5;
+    }else if (myGameArea.frameNo >= 3000){
+      d=100;
+      k=-3;
     }else if (myGameArea.frameNo >= 2000){
       d=100;
       k=-2.5;
@@ -149,7 +155,7 @@ function updateGameArea() {
       d=150;
       k=-2;
     }else if (myGameArea.frameNo >= 1000){
-      d=100;
+      d=200;
       k=-1.5;
     }
     if (myGameArea.frameNo == 1 || everyinterval(d)) {
