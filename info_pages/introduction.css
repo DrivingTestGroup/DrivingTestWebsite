@@ -9,7 +9,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
       }
-div{
+.para{
   background-color: white;
   opacity: 0.8;
   padding: 20px 30px;
@@ -38,8 +38,10 @@ div{
 }
 
 #ODN{
-  top: 70%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%,70%);
-position: relative;
+  transform: translate(-50%,50%);
+  position: relative;
+  max-width: 50%;
+  font-size: 20px;
 }
