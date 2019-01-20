@@ -38,9 +38,9 @@ body {
 }
 
 #ODN{
-  top: 40%;
+  top: 70%;
   left: 50%;
-  transform: translate(-50%,50%);
+  transform: translate(-50%,70%);
   position: relative;
   max-width: 50%;
   font-size: 20px;
