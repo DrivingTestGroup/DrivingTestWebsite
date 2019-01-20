@@ -112,7 +112,7 @@ function component(width, height, color, x, y, type) {
 
 var bonus=0;
 function updateGameArea() {
-    var x, y, z, w, v, d, y1, k, s, d, r, p;
+    var x, y, z, w, v, d, y1, k, s, d, r;
         for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
             myGameArea.stop();
@@ -142,15 +142,12 @@ function updateGameArea() {
     if (myGameArea.frameNo <= 1000){
       d=250;
       k=-1;
-      p=-1;
     }else if (myGameArea.frameNo >= 4000){
       d=50;
       k=-3.5;
-      p=-2;
     }else if (myGameArea.frameNo >= 3000){
       d=100;
       k=-3;
-      p=2;
     }else if (myGameArea.frameNo >= 2000){
       d=100;
       k=-2.5;
@@ -204,7 +201,7 @@ function updateGameArea() {
         myObstacles[i].update();
     }
     for (i = 0; i < myPeople.length; i += 1) {
-        myPeople[i].y += p;
+        myPeople[i].y += -1;
         myPeople[i].x += k;
         myPeople[i].update();
     }
