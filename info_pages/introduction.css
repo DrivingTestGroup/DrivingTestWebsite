@@ -25,16 +25,16 @@ body {
 
 
 #ODN{
-margin-left: 50%;
   max-width: 50%;
   padding: 5px 10px;
   color: navy;
   border: 2px solid navy;
   border-radius: 7px;
   cursor:pointer;
-  margin:15px 0;
+  margin:15px;
+  margin-left: 60%;
   background-color:white;
-    opacity: 0.8;
+  opacity: 0.8;
 }
 #ODN:hover {
   background-color: navy;
