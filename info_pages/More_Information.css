@@ -1,5 +1,5 @@
 h1{
-  color:#33adff;
+  color:navy;
   text-align: center;
 }
 body {
@@ -51,7 +51,7 @@ div{
   border-radius: 7px;
   cursor:pointer;
   margin:15px;
-  margin-left: 60%;
+  margin-left: 30%;
   background-color:white;
   opacity: 0.8;
 }
