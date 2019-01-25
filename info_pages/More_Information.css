@@ -70,6 +70,10 @@ h1{
 .quiz_link:hover {
   text-shadow: 0 3px 2px  #ccebff;
   color:#005c99;
+  -ms-transition: text-shadow 0.5s, color 1s;
+  -webkit-transition: text-shadow 0.5s, color 1s;
+  -moz-transition: text-shadow 0.5s, color 1s;
+  -o-transition: text-shadow 0.5s, color 1s;
   transition: text-shadow 0.5s, color 1s;
 }
 
@@ -92,6 +96,10 @@ h1{
   color: white;
   border: 2px solid navy;
   text-shadow:none;
+  -ms-transition: background-color 1.5s, color 1s;
+  -webkit-transition: background-color 1.5s, color 1s;
+  -moz-transition: background-color 1.5s, color 1s;
+  -o-transition: background-color 1.5s, color 1s;
   transition: background-color 1.5s, color 1s;
 }
 
