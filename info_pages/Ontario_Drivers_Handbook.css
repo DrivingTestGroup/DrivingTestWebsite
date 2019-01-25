@@ -25,6 +25,10 @@ h1{
   opacity: 0.8;
   padding: 80px 90px 120px 90px;
   left: 50%;
+  -ms-transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
   transform: translate(-50%,0);
   position: relative;
   max-width: 50%;
@@ -52,6 +56,10 @@ h1{
 .info_link:hover {
   text-shadow: 0 3px 2px  #ffd9b3;
   color:#e67300;
+  -ms-transition: text-shadow 0.5s, color 1s;
+  -webkit-transition: text-shadow 0.5s, color 1s;
+  -moz-transition: text-shadow 0.5s, color 1s;
+  -o-transition: text-shadow 0.5s, color 1s;
   transition: text-shadow 0.5s, color 1s;
 }
 
@@ -71,6 +79,10 @@ h1{
   -moz-transform-origin:left;
   -o-transform-origin:left;
   transform-origin:left;
+  -ms-transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
 }
 
