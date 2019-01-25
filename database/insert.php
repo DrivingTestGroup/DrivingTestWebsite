@@ -1,15 +1,37 @@
 <?php
-$servername = "localhost";
-$username = "id8147643_root";
-$password = "Iscream567";
-$db = "id8147643_g1drivingtest";
+include 'connectdb.php';
+$name = test_input($_POST['name']);
+$comment = test_input($_POST['comment']);
+$date = date("Y/m/d");
 
-// Create connection
-$conn = new mysqli($servername, $username, $password,$db);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+//defines the function test_input
+function test_input($data) {
+  //allows the input of html code (ex. <br>)
+  $data = htmlspecialchars($data);
+          
+  //adds a backslash if there is an apostrophe
+  for ($i=0;$i<strlen($data);$i++) {
+    //escapes single quotes
+    if ($data[$i] == "'" or $data[$i] == "\\"){
+      $data = substr_replace($data,"\\",$i,0);
+      $i++;
+    }
+  }
+
+  return $data;
 }
-//echo "Connected successfully<br>";
+
+
+
+$sql = "INSERT INTO Comment_Section (Name, Comment, Date)
+VALUES ('$name', '$comment', '$date')";
+
+if ($conn->query($sql) === TRUE) {
+    //echo "<br><br>New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 ?>
