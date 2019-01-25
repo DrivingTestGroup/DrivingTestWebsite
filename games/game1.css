@@ -1,0 +1,12 @@
+video{
+    width:320px;
+    height:240px;
+}
+
+
+/*when the screen width is less than 400px*/
+@media screen and (max-width: 400px) {
+    video{
+        width:250px;
+    }
+}
