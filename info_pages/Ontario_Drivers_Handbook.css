@@ -37,16 +37,80 @@ h1{
     margin-bottom:3px;
 }
 
+.follow_link{
+    font-weight:bold;
+}
+
 /*link*/
 .info_link {
   text-decoration:none;
-  color:#ff3385;
+  color:#ff9933;
   font-weight:bold;
 }
 
 
 .info_link:hover {
-  text-shadow: 0 3px 2px  #ff99e6;
-  color:#cc0052;
+  text-shadow: 0 3px 2px  #ffd9b3;
+  color:#e67300;
   transition: text-shadow 0.5s, color 1s;
+}
+
+/*underline below the link*/
+.info_underline {
+  opacity:0;
+  background-color:#e67300;
+  padding: 1px 0;
+  width:1px;
+}
+
+/*show underline when hovering over the link*/
+.info_link:hover ~ .info_underline {
+  opacity:1;
+  -ms-transform-origin:left;
+  -webkit-transform-origin:left;
+  -moz-transform-origin:left;
+  -o-transform-origin:left;
+  transform-origin:left;
+  transition: transform 1s;
+}
+
+.intro:hover ~ .first_line {
+  -ms-transform: scaleX(172);
+  -webkit-transform: scaleX(172);
+  -moz-transform: scaleX(172);
+  -o-transform: scaleX(172);
+  transform: scaleX(172);
+}
+
+.faq:hover ~ .second_line {
+  -ms-transform: scaleX(35);
+  -webkit-transform: scaleX(35);
+  -moz-transform: scaleX(35);
+  -o-transform: scaleX(35);
+  transform: scaleX(35);
+}
+
+
+
+/*when the screen width is less than 700px*/
+@media screen and (max-width: 700px) {
+    h1{
+        font-size:25px;
+    }
+}
+
+/*when the screen width is less than 550px*/
+@media screen and (max-width: 550px) {
+    .paragraph_box{
+        padding: 80px 60px 120px 60px;
+        max-width:60%;
+    }
+}
+
+/*when the screen width is less than 550px*/
+@media screen and (max-width: 550px) {
+    .paragraph_box{
+        padding: 80px 40px 120px 40px;
+        max-width:70%;
+    }
 }
