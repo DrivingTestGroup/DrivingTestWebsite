@@ -9,6 +9,29 @@ include '../navigation_bar/navigation.php';
     <link rel="stylesheet" type="text/css" href="contacts.css">
   </head>
   <body>
+      <?php
+        //defines the input variables: name, comment
+        $name = $comment = "";
+        //defines the variables for showing missing fields messages for name, comment
+        $nameERR = $commentERR = "";
+
+
+        //gives the "ERR" missing fields variables to store the value of the error message if the input is empty -- redefines the input variables according to the user input
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+          if (empty($_POST['name']) and isset($_POST['enter'])) {
+            $nameERR = "Name is missing";
+          } else {
+            $name = $_POST["name"];
+          }
+
+          if (empty($_POST['comment']) and isset($_POST['enter'])) {
+            $commentERR = "Comment field is missing";
+          } else {
+            $comment = $_POST["comment"];
+          }
+
+        }
+      ?>
     <div class="content">
 
       <h1> Contact Us!</h1>
@@ -21,15 +44,19 @@ include '../navigation_bar/navigation.php';
           <p class="comment_title">If you have any questions or suggestions, leave a comment down below</p>
           <div class="comment_ask">
             <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
-            Name: <input type="text" name="name" placeholder="Name"><br>
-            Comment:<br> <textarea rows="4" cols="50" name="comment" placeholder="Enter comment here.."></textarea><br>
+            Name: <input type="text" name="name" placeholder="Name">
+            <span class="error"> <?php echo $nameERR;?></span><br>
+            
+            Comment:<br> <textarea name="comment" placeholder="Enter comment here.."></textarea>
+            <br><span class="error"> <?php echo $commentERR;?></span><br>
+            
             <input type="submit" name="enter" value="Submit">
             </form>
 
           </div>
           <?php
           //insert user data into the database
-          if (isset($_POST['enter'])){
+          if (isset($_POST['enter']) and $nameERR == "" and $commentERR == ""){
               include'../database/insert.php';
           }
           
