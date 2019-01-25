@@ -3,10 +3,9 @@
 }
 
 h1{
-  color:#33adff;
+  color:#005266;
   text-align: center;
   font-size:35px;
-  text-decoration:underline;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -28,6 +27,10 @@ h1{
   opacity: 0.8;
   padding: 60px 90px;
   left: 50%;
+  -ms-transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
   transform: translate(-50%,0);
   position: absolute;
   max-width: 80%;
@@ -44,15 +47,18 @@ h1{
 /*link*/
 .info_link {
   text-decoration:none;
-  color:#ff3385;
+  color:#004d66;
   font-weight:bold;
 }
 
 
 .info_link:hover {
-  text-shadow: 0 3px 2px  #ff99e6;
-  color:#cc0052;
-  transition: text-shadow 0.5s, color 1s;
+  color:#0086b3;
+  -ms-transition: color 1s;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
 }
 
 /*link to Ontario Driver's Handbook*/
@@ -64,5 +70,97 @@ h1{
     margin-top:30px;
     font-weight:bold;
     text-align:left;
+}
+
+
+/*underline below the link*/
+.info_underline {
+  opacity:0;
+  background-color:#0086b3;
+  padding: 1px 0;
+  width:1px;
+}
+
+/*show underline when hovering over the link*/
+.info_link:hover ~ .info_underline {
+  opacity:1;
+  -ms-transform-origin:left;
+  -webkit-transform-origin:left;
+  -moz-transform-origin:left;
+  -o-transform-origin:left;
+  transform-origin:left;
+  -ms-transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  -ms-transform: scaleX(220);
+  -webkit-transform: scaleX(220);
+  -moz-transform: scaleX(220);
+  -o-transform: scaleX(220);
+  transform: scaleX(220);
+}
+
+/*when the screen width is less than 900px*/
+@media screen and (max-width: 900px) {
+    h1{
+        font-size:30px;
+    }
+}
+
+/*when the screen width is less than 750px*/
+@media screen and (max-width: 750px) {
+    .content{
+        min-height:900px;
+    }
+}
+
+/*when the screen width is less than 650px*/
+@media screen and (max-width: 650px) {
+    #para{
+        min-width:60%;
+    }
+    
+}
+
+/*when the screen width is less than 550px*/
+@media screen and (max-width: 550px) {
+    #para{
+        padding:60px 70px;
+    }
+}
+
+/*when the screen width is less than 500px*/
+@media screen and (max-width: 500px) {
+    .paragraph, .follow_link, .info_link{
+        font-size:14px;
+    }
+    
+    h1{
+        font-size:25px;
+    }
+    
+}
+
+/*when the screen width is less than 450px*/
+@media screen and (max-width: 450px) {
+    .paragraph, .follow_link, .info_link{
+        font-size:13px;
+    }
+}
+
+/*when the screen width is less than 400px*/
+@media screen and (max-width: 400px) {
+    #para{
+        min-width:70%;
+        padding:60px 40px;
+    }
+}
+
+/*when the screen width is less than 350px*/
+@media screen and (max-width: 350px) {
+    .paragraph, .follow_link, .info_link{
+        font-size:12px;
+    }
 }
 
