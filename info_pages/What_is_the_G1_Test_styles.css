@@ -1,0 +1,67 @@
+*{
+  overflow-x:hidden;  
+}
+
+h1{
+  color:#33adff;
+  text-align: center;
+  font-size:35px;
+  text-decoration:underline;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.content{
+    background-image: url('../pictures/info_pages/winter.jpg');  
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+}
+
+
+#para{
+  background-color: white;
+  opacity: 0.8;
+  padding: 60px 90px;
+  left: 50%;
+  transform: translate(-50%,0);
+  position: absolute;
+  max-width: 80%;
+  min-width:50%;
+  box-shadow: 0px 10px 8px 5px black;
+  font-size: 20px;
+  min-height:100%;
+}
+
+.paragraph{
+    text-align: justify;
+}
+
+/*link*/
+.info_link {
+  text-decoration:none;
+  color:#ff3385;
+  font-weight:bold;
+}
+
+
+.info_link:hover {
+  text-shadow: 0 3px 2px  #ff99e6;
+  color:#cc0052;
+  transition: text-shadow 0.5s, color 1s;
+}
+
+/*link to Ontario Driver's Handbook*/
+.handbook{
+    text-align:left;
+}
+
+.follow_link{
+    margin-top:30px;
+    font-weight:bold;
+    text-align:left;
+}
