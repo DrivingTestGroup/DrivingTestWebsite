@@ -37,9 +37,9 @@
           <div class="xs_dropdown_content">
                       <a class="dropdown-selection" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/info_pages/What_is_the_G1_Test.php"> What is the G1 Test? </a>
 
-          <a class="xs_dropdown-selection" href="info_pages/Ontario_Drivers_Handbook.html">Ontario Drivers Handbook </a>
+          <a class="xs_dropdown-selection" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/info_pages/Ontario_Drivers_Handbook.php">Ontario Drivers Handbook </a>
 
-          <a class="xs_dropdown-selection" href="info_pages/More_Information.html"> More Information </a>
+          <a class="xs_dropdown-selection" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/info_pages/More_Information.php"> More Information </a>
           </div>
       </div>
       
@@ -67,15 +67,14 @@
         </div>
          
         <div class="xs_dropdown_content">
-          <a href="games/game1.html">Game A</a>
+          <a href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/games/road_selector.php">Road Selector</a>
 
-          <a href="games/game2.html">Game B</a>
+          <a href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/games/dont_crash.php">Dont't Crash</a>
 
-          <a href="games/game3.html">Game C</a>
         </div>
       </div>
       
-      <a class="xs_menu_link" href="index.html"> CONTACTS
+      <a class="xs_menu_link" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/contacts/Contacts.php"> CONTACTS
         <div class="underline">
         </div>
       </a>
@@ -106,9 +105,9 @@
         <div class="dropdown-content">
           <a class="dropdown-selection" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/info_pages/What_is_the_G1_Test.php"> What is the G1 Test? </a>
 
-          <a class="dropdown-selection" href="info_pages/How_to_get_it.html "> How to get it </a>
+          <a class="dropdown-selection" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/info_pages/Ontario_Drivers_Handbook.php"> Ontario Drivers Handbook </a>
 
-          <a class="dropdown-selection" href="info_pages/More_Information.html"> More Information </a>
+          <a class="dropdown-selection" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/info_pages/More_Information.php"> More Information </a>
         </div>
       </div>
 
@@ -136,17 +135,16 @@
           <i class="fa fa-caret-down"></i>
         </div>
         <div class="dropdown-content">
-          <a href="games/game1.html">Game A</a>
+          <a href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/games/road_selector.php">Road Selector</a>
 
-          <a href="games/game2.html">Game B</a>
+          <a href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/games/dont_crash.php">Dont't Crash</a>
 
-          <a href="games/game3.html">Game C</a>
         </div>
 
     </div>
 
 
-    <a class="menu-link" href="index.html"> CONTACTS
+    <a class="menu-link" href="https://wwwg1drivingtestwebsitetk.000webhostapp.com/contacts/Contacts.php"> CONTACTS
       <div class="underline">
       </div> </a>
   </div>
