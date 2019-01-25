@@ -1,0 +1,123 @@
+/*overall content of the page*/
+.content{
+  background-image: url("../pictures/contacts/contactpic.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height:800px;
+}
+
+.contact_box{
+  background-color: white;
+  opacity: 0.8;
+  padding: 20px 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,0);
+  position: relative;
+  max-width: 50%;
+  box-shadow: 0 10px 8px 5px black;
+  margin-bottom:500px;
+}
+
+h1{
+    text-align:center;
+    font-size:40px;
+    color:navy;
+    text-shadow:1px 1px 2px #80e5ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/*link*/
+.more_info{
+    color: #00ccff;
+    transition:color 1s;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.more_info:hover{
+    color: #003d4d;
+}
+
+
+/*paragraph text*/
+.paragraph{
+    margin-bottom:80px;
+}
+
+/*comment title*/
+.comment_title{
+    font-size:20px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/*area for commenting*/
+.comment_area{
+    position:relative;
+    min-height: 600px;
+    background-color: #F0F0F0;
+    padding:40px 30px;
+}
+
+
+
+/*box for user comments*/
+.comment_box{
+    padding:30px 40px;
+    background-color:#00ace6;
+    height:50px;
+    margin:20px 0;
+    width:800px;
+    border-radius:5px;
+}
+
+input[type=text], textarea{
+    padding:10px 20px;
+    margin:10px 0;
+    border: 1px solid navy;
+    border-radius:20px;
+}
+
+input[type=submit]{
+    padding:5px 20px;
+    background-color:navy;
+    color:white;
+    border-radius:15px;
+    border:2px solid #66c2ff;
+    transition:background-color 1s, border 1s;
+    cursor:pointer;
+}
+
+input[type=submit]:hover{
+    background-color:#80e5ff;
+    border:2px solid navy;
+}
+/*forms for comments*/
+.comment_ask{
+    padding: 20px 10px;
+    background-color:#47d1d1;
+    border:2px inset #00bfff;
+    width:600px;
+    border-radius:15px;
+    color:#0f3d3d;
+}
+
+/*username*/
+.username{
+    font-weight:bold;
+    color:#00394d;
+}
+
+/*date*/
+.date{
+    float:right;
+    color:#DCDCDC;
+}
+
+.comment{
+    color:#006080;
+}
