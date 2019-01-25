@@ -1,3 +1,7 @@
+*{
+  overflow-x:hidden;  
+}
+
 /*overall content of the page*/
 .content{
   background-image: url("../pictures/contacts/contactpic.jpg");
@@ -5,6 +9,7 @@
   background-size: cover;
   background-position: center;
   min-height:800px;
+  width:100%;
 }
 
 .contact_box{
@@ -13,6 +18,10 @@
   padding: 20px 30px;
   top: 50%;
   left: 50%;
+  -ms-transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
   transform: translate(-50%,0);
   position: relative;
   max-width: 50%;
@@ -24,15 +33,21 @@ h1{
     text-align:center;
     font-size:40px;
     color:navy;
-    text-shadow:1px 1px 2px #80e5ff;
+    text-shadow:1px 1px 2px #001a66;
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding:30px 40px;
+    background-color:#99ebff;
 }
 
 
 /*link*/
 .more_info{
     color: #00ccff;
+    -ms-transition:color 1s;
+    -webkit-transition:color 1s;
+    -moz-transition:color 1s;
+    -o-transition:color 1s;
     transition:color 1s;
     text-decoration:none;
     font-weight:bold;
@@ -69,11 +84,18 @@ h1{
 .comment_box{
     padding:30px 40px;
     background-color:#00ace6;
-    height:50px;
+    min-height:50px;
     margin:20px 0;
-    width:800px;
+    max-width:75%;
     border-radius:5px;
 }
+
+/*size of textarea*/
+textarea{
+    height:8em;
+    width:30em;
+}
+
 
 input[type=text], textarea{
     padding:10px 20px;
@@ -88,20 +110,31 @@ input[type=submit]{
     color:white;
     border-radius:15px;
     border:2px solid #66c2ff;
+    -ms-transition:background-color 1s, border 1s;
+    -webkit-transition:background-color 1s, border 1s;
+    -moz-transition:background-color 1s, border 1s;
+    -o-transition:background-color 1s, border 1s;
     transition:background-color 1s, border 1s;
     cursor:pointer;
+    margin-top:5px;
 }
 
 input[type=submit]:hover{
     background-color:#80e5ff;
     border:2px solid navy;
 }
+
+/*error for missing fields*/
+.error{
+    color:red;
+}
+
 /*forms for comments*/
 .comment_ask{
     padding: 20px 10px;
     background-color:#47d1d1;
     border:2px inset #00bfff;
-    width:600px;
+    max-width:600px;
     border-radius:15px;
     color:#0f3d3d;
 }
@@ -120,4 +153,97 @@ input[type=submit]:hover{
 
 .comment{
     color:#006080;
+}
+
+
+/*when the screen width is less than 800px*/
+@media screen and (max-width: 800px) {
+    .comment_box{
+        max-width:100%;
+    }
+    
+    .content{
+        min-height:600px;
+    }
+    
+    .contact_box{
+        margin-bottom:400px;
+    }
+}
+
+/*when the screen width is less than 700px*/
+@media screen and (max-width: 700px) {
+    .date, .comment, .username, form, input, textarea, .contact_box{
+        font-size:14px;
+    }
+    
+    .comment_title{
+        font-size:17px;
+    }
+    
+    .content{
+        min-height:400px;
+    }
+    
+    .contact_box{
+        margin-bottom:300px;
+    }
+}
+
+/*when the screen width is less than 500px*/
+@media screen and (max-width: 500px) {
+    .date, .comment, .username, form, input, textarea, .contact_box{
+        font-size:13px;
+    }
+    
+    textarea{
+        height:12em;
+        width:25em;
+    }
+    
+    h1{
+        font-size:35px;
+    }
+    
+    .comment_box{
+        padding:30px;
+    }
+}
+
+/*when the screen width is less than 450px*/
+@media screen and (max-width: 450px) {
+    textarea{
+        height:14em;
+        width:20em;
+    }
+    
+        .content{
+        min-height:300px;
+    }
+    
+    .contact_box{
+        margin-bottom:200px;
+    }
+}
+
+/*when the screen width is less than 400px*/
+@media screen and (max-width: 400px) {
+     .date, .comment, .username, form, input, textarea, .contact_box{
+        font-size:12px;
+    }
+    
+    .comment_title{
+        font-size:15px;
+    }
+    
+    h1{
+        font-size:30px;
+    }
+}
+
+/*when the screen width is less than 350px*/
+@media screen and (max-width: 350px) {
+    .date, .comment, .username, form, input, textarea, .contact_box{
+        font-size:11px;
+    }
 }
