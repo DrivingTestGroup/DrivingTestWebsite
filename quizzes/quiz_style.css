@@ -22,7 +22,7 @@ h {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  min-height: 700px;
+  min-height: 950px;
   top:66px;
   position:relative;
 }
@@ -178,11 +178,11 @@ h {
 }
 
 .quiz_link:hover ~ .medium_line {
-  -ms-transform: scaleX(180);
-  -webkit-transform: scaleX(180);
-  -moz-transform: scaleX(180);
-  -o-transform: scaleX(180);
-  transform: scaleX(180);
+  -ms-transform: scaleX(185);
+  -webkit-transform: scaleX(185);
+  -moz-transform: scaleX(185);
+  -o-transform: scaleX(185);
+  transform: scaleX(185);
 }
 
 .quiz_link:hover ~ .hard_line {
@@ -193,6 +193,13 @@ h {
   transform: scaleX(160);
 }
 
+.quiz_link:hover ~ .crash_line {
+  -ms-transform: scaleX(115);
+  -webkit-transform: scaleX(115);
+  -moz-transform: scaleX(115);
+  -o-transform: scaleX(115);
+  transform: scaleX(115);
+}
 
 
 /*buttons*/
