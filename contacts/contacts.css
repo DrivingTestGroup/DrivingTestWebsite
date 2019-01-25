@@ -1,123 +1,161 @@
-/*overall content of the page*/
-.content{
-  background-image: url("../pictures/contacts/contactpic.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  min-height:800px;
-}
-
-.contact_box{
-  background-color: white;
-  opacity: 0.8;
-  padding: 20px 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,0);
-  position: relative;
-  max-width: 50%;
-  box-shadow: 0 10px 8px 5px black;
-  margin-bottom:500px;
+*{
+  overflow-x:hidden;  
 }
 
 h1{
-    text-align:center;
-    font-size:40px;
-    color:navy;
-    text-shadow:1px 1px 2px #80e5ff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  color:#005266;
+  text-align: center;
+  font-size:35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
+
+.content{
+    background-image: url('../pictures/info_pages/winter.jpg');  
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+}
+
+
+#para{
+  background-color: white;
+  opacity: 0.8;
+  padding: 60px 90px;
+  left: 50%;
+  -ms-transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  position: absolute;
+  max-width: 80%;
+  min-width:50%;
+  box-shadow: 0px 10px 8px 5px black;
+  font-size: 20px;
+  min-height:100%;
+}
+
+.paragraph{
+    text-align: justify;
+}
 
 /*link*/
-.more_info{
-    color: #00ccff;
-    transition:color 1s;
-    text-decoration:none;
+.info_link {
+  text-decoration:none;
+  color:#004d66;
+  font-weight:bold;
+}
+
+
+.info_link:hover {
+  color:#0086b3;
+  -ms-transition: color 1s;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
+}
+
+/*link to Ontario Driver's Handbook*/
+.handbook{
+    text-align:left;
+}
+
+.follow_link{
+    margin-top:30px;
     font-weight:bold;
-}
-
-.more_info:hover{
-    color: #003d4d;
+    text-align:left;
 }
 
 
-/*paragraph text*/
-.paragraph{
-    margin-bottom:80px;
+/*underline below the link*/
+.info_underline {
+  opacity:0;
+  background-color:#0086b3;
+  padding: 1px 0;
+  width:1px;
 }
 
-/*comment title*/
-.comment_title{
-    font-size:20px;
-    font-weight:bold;
-    margin:10px 0;
+/*show underline when hovering over the link*/
+.info_link:hover ~ .info_underline {
+  opacity:1;
+  -ms-transform-origin:left;
+  -webkit-transform-origin:left;
+  -moz-transform-origin:left;
+  -o-transform-origin:left;
+  transform-origin:left;
+  transition: transform 1s;
+  -ms-transform: scaleX(220);
+  -webkit-transform: scaleX(220);
+  -moz-transform: scaleX(220);
+  -o-transform: scaleX(220);
+  transform: scaleX(220);
 }
 
-/*area for commenting*/
-.comment_area{
-    position:relative;
-    min-height: 600px;
-    background-color: #F0F0F0;
-    padding:40px 30px;
+/*when the screen width is less than 900px*/
+@media screen and (max-width: 900px) {
+    h1{
+        font-size:30px;
+    }
 }
 
-
-
-/*box for user comments*/
-.comment_box{
-    padding:30px 40px;
-    background-color:#00ace6;
-    height:50px;
-    margin:20px 0;
-    width:800px;
-    border-radius:5px;
+/*when the screen width is less than 750px*/
+@media screen and (max-width: 750px) {
+    .content{
+        min-height:900px;
+    }
 }
 
-input[type=text], textarea{
-    padding:10px 20px;
-    margin:10px 0;
-    border: 1px solid navy;
-    border-radius:20px;
+/*when the screen width is less than 650px*/
+@media screen and (max-width: 650px) {
+    #para{
+        min-width:60%;
+    }
+    
 }
 
-input[type=submit]{
-    padding:5px 20px;
-    background-color:navy;
-    color:white;
-    border-radius:15px;
-    border:2px solid #66c2ff;
-    transition:background-color 1s, border 1s;
-    cursor:pointer;
+/*when the screen width is less than 550px*/
+@media screen and (max-width: 550px) {
+    #para{
+        padding:60px 70px;
+    }
 }
 
-input[type=submit]:hover{
-    background-color:#80e5ff;
-    border:2px solid navy;
-}
-/*forms for comments*/
-.comment_ask{
-    padding: 20px 10px;
-    background-color:#47d1d1;
-    border:2px inset #00bfff;
-    width:600px;
-    border-radius:15px;
-    color:#0f3d3d;
+/*when the screen width is less than 500px*/
+@media screen and (max-width: 500px) {
+    .paragraph, .follow_link, .info_link{
+        font-size:14px;
+    }
+    
+    h1{
+        font-size:25px;
+    }
+    
 }
 
-/*username*/
-.username{
-    font-weight:bold;
-    color:#00394d;
+/*when the screen width is less than 450px*/
+@media screen and (max-width: 450px) {
+    .paragraph, .follow_link, .info_link{
+        font-size:13px;
+    }
 }
 
-/*date*/
-.date{
-    float:right;
-    color:#DCDCDC;
+/*when the screen width is less than 400px*/
+@media screen and (max-width: 400px) {
+    #para{
+        min-width:70%;
+        padding:60px 40px;
+    }
 }
 
-.comment{
-    color:#006080;
+/*when the screen width is less than 350px*/
+@media screen and (max-width: 350px) {
+    .paragraph, .follow_link, .info_link{
+        font-size:12px;
+    }
 }
