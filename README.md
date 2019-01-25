@@ -1,9 +1,6 @@
 ### Link ###
 
-Both of the links below take you to the same page:
+Link to the webpage down below:
 
 www.g1drivingtestwebsite.tk
 
-or
-
-http://www.g1drivingtestsite.dx.am/
