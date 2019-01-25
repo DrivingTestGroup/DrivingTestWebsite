@@ -6,7 +6,7 @@ include 'connectdb.php';
 
 <?php
 
-$sql = "SELECT * FROM Comment_Section";
+$sql = "SELECT * FROM Comment_Section ORDER BY Id DESC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
