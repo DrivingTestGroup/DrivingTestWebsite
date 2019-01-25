@@ -23,7 +23,8 @@ include '../navigation_bar/navigation.php';
   receive your results immediately. The results of your G1 written test are valid for one year. (G1, 2018)
         </p>
         <p class="follow_link">Information about the Driver's Handbook at </p>
-        <a class='info_link handbook' href='Ontario_Drivers_Handbook.html'>Ontario Driver's Handbook</a>
+        <a class='info_link handbook' href='Ontario_Drivers_Handbook.php'>Ontario Driver's Handbook</a>
+        <div class="info_underline"></div>
 
     </div>
   </div>
