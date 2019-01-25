@@ -102,6 +102,7 @@ input[type=text], textarea{
     margin:10px 0;
     border: 1px solid navy;
     border-radius:20px;
+    color:green;
 }
 
 input[type=submit]{
