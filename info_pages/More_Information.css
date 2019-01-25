@@ -40,14 +40,16 @@ h1{
 
 
 .que {
-  font-size: 20px;
+  font-size: 17px;
   font-weight:bold;
+  color:#664d00;
 }
 
 
 
 .ans {
-  font-size: 17px;
+  font-size: 15px;
+  margin-bottom:1em;
 }
 
 
@@ -55,15 +57,15 @@ h1{
 /*link*/
 .quiz_link {
   text-decoration:none;
-  color:#ff3385;
+  color:#000066;
   font-weight:bold;
 }
 
 
 
 .quiz_link:hover {
-  text-shadow: 0 3px 2px  #ff99e6;
-  color:#cc0052;
+  text-shadow: 0 3px 2px  #ccebff;
+  color:#005c99;
   transition: text-shadow 0.5s, color 1s;
 }
 
@@ -87,4 +89,122 @@ h1{
   border: 2px solid navy;
   text-shadow:none;
   transition: background-color 1.5s, color 1s;
+}
+
+
+
+/*when the screen width is less than 1220px*/
+@media screen and (max-width: 1220px) {
+    .content {
+        min-height:1300px;
+    }
+    
+    .paragraph_box{
+        padding: 80px 90px 155px 90px;
+    }
+}
+
+/*when the screen width is less than 1150px*/
+@media screen and (max-width: 1150px) {
+    .content {
+        min-height:1500px;
+    }
+    
+    .paragraph_box{
+        padding: 80px 90px 230px 90px;
+    }
+}
+
+/*when the screen width is less than 1020px*/
+@media screen and (max-width: 1020px) {
+    .paragraph_box{
+        padding: 80px 90px 110px 90px;
+    }
+}
+
+/*when the screen width is less than 986px*/
+@media screen and (max-width: 986px) {
+    .content {
+        min-height:1700px;
+    }
+    
+    .paragraph_box{
+        padding: 80px 90px 240px 90px;
+    }
+}
+
+/*when the screen width is less than 920px*/
+@media screen and (max-width: 920px) {
+    .paragraph_box{
+        padding: 80px 90px 110px 90px;
+    }
+}
+
+/*when the screen width is less than 810px*/
+@media screen and (max-width: 810px) {
+    .ans, .quiz_link, #ODN{
+        font-size:14px;
+    }
+}
+
+/*when the screen width is less than 710px*/
+@media screen and (max-width: 710px) {
+    .que{
+        font-size:16px;
+    }
+    
+    .paragraph_box{
+        padding: 60px 90px 150px 90px;
+        min-width:60%;
+    }
+}
+
+/*when the screen width is less than 580px*/
+@media screen and (max-width: 580px) {
+    .que{
+        font-size:15px;
+    }
+    
+    .ans, .quiz_link, #ODN{
+        font-size:13px;
+    }
+    
+    .paragraph_box{
+        padding: 80px 60px 110px 60px;
+    }
+}
+
+/*when the screen width is less than 510px*/
+@media screen and (max-width: 510px) {
+    .paragraph_box{
+        min-width:70%;
+        padding: 60px 40px 110px 40px;
+    }
+    
+    h1{
+        font-size:20px;
+    }
+    
+     .que{
+        font-size:14px;
+    }
+    
+}
+
+/*when the screen width is less than 400px*/
+@media screen and (max-width: 400px) {
+    .ans, .quiz_link, #ODN{
+        font-size:12px;
+    }
+}
+
+/*when the screen width is less than 360px*/
+@media screen and (max-width: 360px) {
+    .content {
+        min-height:1900px;
+    }
+    
+     .paragraph_box{
+        padding: 80px 30px 110px 30px;
+    }
 }
