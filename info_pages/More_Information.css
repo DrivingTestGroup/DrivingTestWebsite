@@ -1,0 +1,90 @@
+*{
+  overflow-x:hidden;  
+}
+
+/*title*/
+h1{
+  color:navy;
+  text-align: center;
+  font-size:25px;
+  margin-bottom:1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/*content of the page*/
+.content {
+  background-image: url('../pictures/info_pages/country_road3.jpg');  
+  min-height: 1220px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+}
+
+/*division for the text*/
+.paragraph_box{
+  background-color: white;
+  opacity: 0.8;
+  padding: 80px 90px 120px 90px;
+  left: 50%;
+  transform: translate(-50%,0);
+  position: absolute;
+  max-width: 80%;
+  min-width:50%;
+  box-shadow: 0 10px 8px 5px black;
+  min-height:100%;
+}
+
+
+
+.que {
+  font-size: 20px;
+  font-weight:bold;
+}
+
+
+
+.ans {
+  font-size: 17px;
+}
+
+
+
+/*link*/
+.quiz_link {
+  text-decoration:none;
+  color:#ff3385;
+  font-weight:bold;
+}
+
+
+
+.quiz_link:hover {
+  text-shadow: 0 3px 2px  #ff99e6;
+  color:#cc0052;
+  transition: text-shadow 0.5s, color 1s;
+}
+
+
+#ODN{
+  max-width: 50%;
+  padding: 5px 10px;
+  color: navy;
+  border: 2px solid navy;
+  border-radius: 7px;
+  cursor:pointer;
+  background-color:white;
+  opacity: 0.8;
+  text-decoration:none;
+  top:3em;
+}
+
+#ODN:hover {
+  background-color: navy;
+  color: white;
+  border: 2px solid navy;
+  text-shadow:none;
+  transition: background-color 1.5s, color 1s;
+}
