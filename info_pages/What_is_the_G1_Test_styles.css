@@ -89,6 +89,10 @@ h1{
   -moz-transform-origin:left;
   -o-transform-origin:left;
   transform-origin:left;
+  -ms-transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
   -ms-transform: scaleX(220);
   -webkit-transform: scaleX(220);
