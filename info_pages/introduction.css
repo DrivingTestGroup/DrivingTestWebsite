@@ -1,60 +1,68 @@
-h1{
-  margin-top: 10%;
-  color:navy;
-  text-align: center;
+*{
+  overflow-x:hidden;  
 }
 
-body {
-    background-image: url('https://images.wallpaperscraft.com/image/mountains_road_marking_119081_3840x2400.jpg');  
+h1{
+  color:#33adff;
+  text-align: center;
+  font-size:35px;
+  text-decoration:underline;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.content{
+    background-image: url('../pictures/info_pages/winter.jpg');  
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-      }
+    width:100%;
+}
+
+
 #para{
   background-color: white;
   opacity: 0.8;
-  padding: 20px 30px;
-  margin-top: 5%;
-  margin-left: 22.5%;
-  max-width: 50%;
+  padding: 60px 90px;
+  left: 50%;
+  transform: translate(-50%,0);
+  position: absolute;
+  max-width: 80%;
+  min-width:50%;
   box-shadow: 0px 10px 8px 5px black;
-  text-align: center;
   font-size: 20px;
+  min-height:100%;
+}
+
+.paragraph{
+    text-align: justify;
 }
 
 /*link*/
-
-
-#ODN{
-  max-width: 50%;
-  padding: 5px 10px;
-  color: navy;
-  border: 2px solid navy;
-  border-radius: 7px;
-  cursor:pointer;
-  margin:15px;
-  margin-left: 60%;
-  background-color:white;
-  opacity: 0.8;
-}
-#ODN:hover {
-  background-color: navy;
-  color: white;
-
-  border: 2px solid navy;
-  text-shadow:none;
-  transition: background-color 1.5s, color 1s;
-}
-
-/*link*/
-.quiz_link {
+.info_link {
   text-decoration:none;
   color:#ff3385;
   font-weight:bold;
 }
 
-.quiz_link:hover {
+
+.info_link:hover {
   text-shadow: 0 3px 2px  #ff99e6;
   color:#cc0052;
   transition: text-shadow 0.5s, color 1s;
+}
+
+/*link to Ontario Driver's Handbook*/
+.handbook{
+    text-align:left;
+}
+
+.follow_link{
+    margin-top:30px;
+    font-weight:bold;
+    text-align:left;
 }
 
