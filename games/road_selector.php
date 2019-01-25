@@ -11,6 +11,8 @@ include '../navigation_bar/navigation.php';
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="../quizzes/quiz_style.css" rel="stylesheet" type="text/css" />
+  
+  <link href="road_selector.css" rel="stylesheet" type="text/css" />
 
   <script type="text/javascript" src="js/road_selector.js"></script>
 
