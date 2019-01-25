@@ -7,10 +7,8 @@ The "Official_Site" Branch will include PHP code to link the different pages tog
 
 
 ### 2. Link ###
-Both of the links below reach the same page.
+Link to the webpage down below.
 
 www.g1drivingtestwebsite.tk 
-
-www.g1drivingtestsite.dx.am
 
 
