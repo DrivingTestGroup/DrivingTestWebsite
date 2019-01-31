@@ -1,21 +1,222 @@
 /*footer*/
+
 .footer {
+
   background-color: #001133;
-  padding: 60px 40px;
+  padding: 60px 40px 140px 40px;
   z-index:2;
   position:relative;
+  
+
 }
+
 
 .footer_items p {
+
   color: white;
+
   font-size: 12px;
+
 }
 
+
+.about{
+  margin-left:34%
+}
+
+
+.memeber{
+  float:left;
+}
+
+
+
+
+.photo{
+  width: 75px;
+  height: 75px;
+  background-color:#80ccff;
+  border-radius:100%;
+  margin:auto;
+  margin:0 2.5em;
+}
+
+/*
+.first{
+  background-image: url("../pictures/footer/about1AD.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.second{
+  background-image: url("../pictures/footer/about2AA.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.third{
+  background-image: url("../pictures/footer/about3AA.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+*/
+
+
+.name{
+  text-align:center;
+  font-size:15px;
+  font-weight:bold;
+}
+
+.rights{
+  height:50px;
+  background-color:#80ccff;
+}
+
+.rights{
+  text-align:center;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+
+.reserved_rights{
+  line-height:50px;
+}
+
+
+
+
+/*when the screen width is less than 1400px*/
+@media screen and (max-width: 1400px) {
+    .about{
+        margin-left:29%
+    }
+}
+
+/*when the screen width is less than 1080px*/
+@media screen and (max-width: 1080px) {
+     .about{
+        margin-left:27%
+    }
+}
+
+/*when the screen width is less than 970px*/
+@media screen and (max-width: 970px) {
+     .about{
+        margin-left:24%
+    }
+}
+
+/*when the screen width is less than 900px*/
+@media screen and (max-width: 870px) {
+     .about{
+        margin-left:20%
+    }
+}
+
+
+/*when the screen width is less than 900px*/
+@media screen and (max-width: 870px) {
+     .about{
+        margin-left:20%
+    }
+}
+
+
+/*when the screen width is less than 760px*/
+@media screen and (max-width: 760px) {
+     .about{
+        margin-left:16%
+    }
+}
+
+/*when the screen width is less than 640px*/
+@media screen and (max-width: 640px) {
+     .about{
+        margin-left:10%
+    }
+    
+    .photo{
+        width:60px;
+        height:60px;
+    }
+}
+
+
+/*when the screen width is less than 530px*/
+@media screen and (max-width: 530px) {
+     .about{
+        margin-left:5%
+    }
+}
+
+
+/*when the screen width is less than 480px*/
+@media screen and (max-width: 480px) {
+     .about{
+        margin-left:10%
+    }
+    
+    .photo{
+        margin:0 2em;
+    }
+}
+
+/*when the screen width is less than 450px*/
+@media screen and (max-width: 450px) {
+     .about{
+        margin-left:0;
+    }
+    
+    .photo{
+        margin:0 2em;
+    }
+}
+
+/*when the screen width is less than 420px*/
+@media screen and (max-width: 420px) {
+    .photo{
+        width:55px;
+        height:55px;
+        margin:0 1.5em;
+    }
+    
+    .footer{
+        padding: 60px 30px 140px 30px;
+    }
+    
+    .rights{
+        letter-spacing:0;
+    }
+}
+
+/*when the screen width is less than 380px*/
+@media screen and (max-width: 380px) {
+    .photo{
+        width:50px;
+        height:50px;
+    }
+    
+    .footer{
+        padding: 60px 20px 140px 20px;
+    }
+}
 
 
 /*when the screen width is less than 500px*/
+
 @media screen and (max-width: 500px) {
+
   .footer_items p {
+
     font-size:10px;
+
   }
+
 }
